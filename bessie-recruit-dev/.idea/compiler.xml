@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="service-user-6001" />
+        <module name="service-company-6001" />
         <module name="recruit-api" />
         <module name="recruit-common" />
         <module name="service-user-7001" />
@@ -19,7 +19,7 @@
       <module name="recruit-api" options="-parameters" />
       <module name="recruit-common" options="-parameters" />
       <module name="recruit-pojo" options="-parameters" />
-      <module name="service-user-6001" options="-parameters" />
+      <module name="service-company-6001" options="-parameters" />
       <module name="service-user-7001" options="-parameters" />
     </option>
   </component>

@@ -13,7 +13,7 @@
         <module>recruit-pojo</module>
         <module>recruit-api</module>
         <module>service-user-7001</module>
-        <module>service-user-6001</module>
+        <module>service-company-6001</module>
     </modules>
 
     <properties>
