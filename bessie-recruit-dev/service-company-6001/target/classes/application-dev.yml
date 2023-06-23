@@ -1,0 +1,2 @@
+server:
+  port: 8099 #port 8099 would be used in dev env
