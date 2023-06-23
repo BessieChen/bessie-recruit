@@ -1,5 +1,7 @@
 package com.bessie.controller;
 
+import com.bessie.grace.result.GraceJsonResult;
+import com.bessie.grace.result.ResponseStatusEnum;
 import com.bessie.pojo.Stu;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -29,6 +31,14 @@ public class HelloController {
         log.error("error");
 
         return "Hello, this is Bessie recruit";
+    }
+
+    @GetMapping("hello2")
+    public Object hello2(){
+        Stu stu = new Stu("123", 123, 123);
+        return GraceJsonResult.ok(stu);
+//        return GraceJsonResult.errorCustom(ResponseStatusEnum.SYSTEM_IO);
+
     }
 
 }

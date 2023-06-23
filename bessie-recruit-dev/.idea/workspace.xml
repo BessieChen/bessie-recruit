@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b78f2aa9-8747-4e55-a2a8-4043cac91874" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recruit-common/src/main/java/com/bessie/grace/result/GraceJsonResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recruit-common/src/main/java/com/bessie/grace/result/JsonResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recruit-common/src/main/java/com/bessie/grace/result/ResponseStatusEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recruit-common/target/recruit-common-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/recruit-common/target/recruit-common-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recruit-pojo/target/recruit-pojo-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/recruit-pojo/target/recruit-pojo-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-company-6001/target/service-user-6001-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/service-company-6001/target/service-user-6001-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-user-7001/src/main/java/com/bessie/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-user-7001/src/main/java/com/bessie/controller/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-user-7001/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service-user-7001/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user-7001/target/classes/com/bessie/controller/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-user-7001/target/classes/com/bessie/controller/HelloController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user-7001/target/service-user-7001-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/service-user-7001/target/service-user-7001-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,11 +48,20 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/recruit-common/src/main/java/com/bessie/grace/result/JsonResult.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/service-user-7001/src/main/java/com/bessie/controller/HelloController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="33" column="1" lean-forward="true" selection-start-line="14" selection-end-line="33" selection-end-column="1" />
+            <state relative-caret-position="570">
+              <caret line="38" column="39" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -52,19 +70,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/recruit-pojo/src/main/java/com/bessie/pojo/Stu.java">
+        <entry file="file://$PROJECT_DIR$/recruit-common/src/main/java/com/bessie/grace/result/GraceJsonResult.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+            <state relative-caret-position="-1097">
+              <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/recruit-common/pom.xml">
+        <entry file="file://$PROJECT_DIR$/recruit-common/src/main/java/com/bessie/grace/result/ResponseStatusEnum.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+            <state relative-caret-position="105">
+              <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -103,12 +121,12 @@
         <entry file="file://$PROJECT_DIR$/service-user-7001/src/main/resources/application-dev.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
-              <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+              <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/service-user-7001/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
@@ -122,6 +140,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -129,6 +148,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>org.projectlombok</find>
+      <find>GraceJSONResult</find>
+      <find>IMOOCJSONResult</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -160,9 +181,13 @@
         <option value="$PROJECT_DIR$/service-user-7001/src/main/resources/application-prod.yml" />
         <option value="$PROJECT_DIR$/service-company-6001/src/main/resources/application-prod.yml" />
         <option value="$PROJECT_DIR$/recruit-pojo/src/main/java/com/bessie/pojo/Stu.java" />
-        <option value="$PROJECT_DIR$/service-user-7001/src/main/java/com/bessie/controller/HelloController.java" />
         <option value="$PROJECT_DIR$/service-user-7001/src/main/resources/application-dev.yml" />
         <option value="$PROJECT_DIR$/service-user-7001/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/recruit-common/src/main/java/GraceJsonResult.java" />
+        <option value="$PROJECT_DIR$/recruit-common/src/main/java/ResponseStatusEnum.java" />
+        <option value="$PROJECT_DIR$/recruit-common/src/main/java/com/bessie/grace/result/GraceJsonResult.java" />
+        <option value="$PROJECT_DIR$/service-user-7001/src/main/java/com/bessie/controller/HelloController.java" />
+        <option value="$PROJECT_DIR$/recruit-common/src/main/java/com/bessie/grace/result/JsonResult.java" />
       </list>
     </option>
   </component>
@@ -194,10 +219,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="297" />
-    <option name="y" value="34" />
-    <option name="width" value="1258" />
-    <option name="height" value="955" />
+    <option name="x" value="846" />
+    <option name="width" value="834" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -214,6 +238,46 @@
             <path>
               <item name="bessie-recruit-dev" type="b2602c69:ProjectViewProjectNode" />
               <item name="bessie-recruit-dev" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bessie-recruit-dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bessie-recruit-dev" type="462c0819:PsiDirectoryNode" />
+              <item name="recruit-api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bessie-recruit-dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bessie-recruit-dev" type="462c0819:PsiDirectoryNode" />
+              <item name="recruit-common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bessie-recruit-dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bessie-recruit-dev" type="462c0819:PsiDirectoryNode" />
+              <item name="recruit-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bessie-recruit-dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bessie-recruit-dev" type="462c0819:PsiDirectoryNode" />
+              <item name="recruit-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bessie-recruit-dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bessie-recruit-dev" type="462c0819:PsiDirectoryNode" />
+              <item name="recruit-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bessie-recruit-dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bessie-recruit-dev" type="462c0819:PsiDirectoryNode" />
+              <item name="recruit-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="result" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bessie-recruit-dev" type="b2602c69:ProjectViewProjectNode" />
@@ -417,10 +481,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <frame x="846" y="0" width="834" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49892008" visible="true" weight="0.2899878" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49892008" visible="true" weight="0.31060606" />
       <window_info id="Structure" order="1" sideWeight="0.5010799" side_tool="true" weight="0.24958949" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -437,12 +501,12 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3289855" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.21264368" side_tool="true" weight="0.3289855" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289855" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3289855" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32857144" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24969475" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" visible="true" weight="0.44139194" />
+      <window_info anchor="right" id="Maven" order="4" visible="true" weight="0.32828283" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
@@ -581,7 +645,38 @@
     <entry file="file://$PROJECT_DIR$/service-user-7001/src/main/resources/application-dev.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-user-7001/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recruit-common/src/main/java/com/bessie/grace/result/ResponseStatusEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recruit-common/src/main/java/com/bessie/grace/result/GraceJsonResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1097">
+          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-user-7001/src/main/java/com/bessie/controller/HelloController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="39" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -595,20 +690,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service-user-7001/src/main/java/com/bessie/controller/HelloController.java">
+    <entry file="file://$PROJECT_DIR$/recruit-common/src/main/java/com/bessie/grace/result/JsonResult.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="33" column="1" lean-forward="true" selection-start-line="14" selection-end-line="33" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-user-7001/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        <state relative-caret-position="210">
+          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
         </state>
       </provider>
     </entry>
