@@ -43,7 +43,7 @@ public class MPDBConfig {
         // dsc.setSchemaName("public");
         dsc.setDriverName("com.mysql.cj.jdbc.Driver"); //mysql8是写成这个驱动. 如果是其他的像是mysql5或者mariadb, 要写成其他的
         dsc.setUsername("root");
-        dsc.setPassword("****@****");
+        dsc.setPassword("Chen@0921");
 
         autoGenerator.setDataSource(dsc);
 
@@ -53,7 +53,7 @@ public class MPDBConfig {
         strategy.setNaming(NamingStrategy.underline_to_camel);          // 下划线转驼峰命名
         strategy.setColumnNaming(NamingStrategy.underline_to_camel);    // 下划线转驼峰命名
 //        strategy.setInclude(scanner("表名，多个英文逗号分割").split(","));
-//        strategy.setInclude("stu");
+        strategy.setInclude("stu");
 
         //下面是需要为哪些{数据表}生成代码
         strategy.setInclude("users");

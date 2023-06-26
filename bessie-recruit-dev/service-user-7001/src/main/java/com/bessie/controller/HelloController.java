@@ -1,12 +1,14 @@
 package com.bessie.controller;
 
 import com.bessie.grace.result.GraceJsonResult;
-import com.bessie.grace.result.ResponseStatusEnum;
-import com.bessie.pojo.Stu;
+import com.bessie.pojo.test.Stu;
+import com.bessie.service.StuService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * @program: bessie-recruit-dev
@@ -18,6 +20,22 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("u")
 @Slf4j
 public class HelloController {
+
+    @Autowired
+    private StuService stuService;
+
+    @GetMapping("stu")
+    public Object stu(){
+        com.bessie.pojo.Stu stu = new com.bessie.pojo.Stu();
+        stu.setAge(12);
+//        stu.setId(13); id是主键, 通过 assign-id 配置
+        stu.setName("bessie");
+
+        stuService.save(stu); //保存到数据库中
+
+        return "Hello, this is stu";
+    }
+
     @GetMapping("hello")
     public Object hello(){
         Stu stu = new Stu();

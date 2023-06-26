@@ -29,6 +29,12 @@
         <relativePath />
     </parent>
 
+    <!--
+        使用dependencyManagement的目的是为了保证当前父工程的干净，
+        也就是说父工程他只负责对依赖（坐标）的管理，以及依赖的版本管理，而不会去引入额外的jar依赖
+        如此一来，父工程的职责就相当的单一了，而且也符合面向对象的理念，是一种父子一来继承的关系
+        依赖的导入只有在各自的子工程中才会导入。
+    -->
     <dependencyManagement>
         <dependencies>
             <!-- mysql 驱动 -->
@@ -195,6 +201,22 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <!--<build>-->
+    <!--<finalName>${project.artifactId}</finalName>-->
+    <!--<plugins>-->
+    <!--&lt;!&ndash; Java 编译 &ndash;&gt;-->
+    <!--<plugin>-->
+    <!--<groupId>org.apache.maven.plugins</groupId>-->
+    <!--<artifactId>maven-compiler-plugin</artifactId>-->
+    <!--<configuration>-->
+    <!--<source>1.8</source>-->
+    <!--<target>1.8</target>-->
+    <!--<encoding>UTF-8</encoding>-->
+    <!--</configuration>-->
+    <!--</plugin>-->
+    <!--</plugins>-->
+    <!--</build>-->
 
 
 

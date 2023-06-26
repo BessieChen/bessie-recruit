@@ -1,8 +1,10 @@
 package com.bessie;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import org.springframework.context.annotation.ComponentScan;
 
 /**
  * @program: bessie-recruit-dev
@@ -10,7 +12,9 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
  * @author: Bessie
  * @create: 2023-06-21 16:45
  **/
-@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class })
+//@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class })
+@SpringBootApplication
+@MapperScan(basePackages = "com.bessie.mapper")
 public class Application {
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);

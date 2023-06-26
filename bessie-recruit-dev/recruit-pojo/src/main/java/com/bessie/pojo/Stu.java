@@ -1,20 +1,60 @@
 package com.bessie.pojo;
 
-import lombok.*;
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
+
+import java.io.Serializable;
 
 /**
- * @program: bessie-recruit-dev
- * @description:
- * @author: Bessie
- * @create: 2023-06-23 14:23
- **/
-@Data
-@Setter
-@ToString
-@AllArgsConstructor
-@NoArgsConstructor
-public class Stu {
+ * <p>
+ * 
+ * </p>
+ *
+ * @author bessie
+ * @since 2023-06-24
+ */
+
+public class Stu implements Serializable {
+
+    private static final long serialVersionUID = 1L;
+
+    private String id;
+
     private String name;
+
     private Integer age;
-    private Integer id;
+
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Stu{" +
+                "id=" + id +
+                ", name=" + name +
+                ", age=" + age +
+                "}";
+    }
 }
