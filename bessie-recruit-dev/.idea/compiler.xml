@@ -7,11 +7,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="recruit-pojo" />
         <module name="service-user-7001" />
         <module name="service-company-6001" />
         <module name="recruit-common" />
         <module name="recruit-api" />
+        <module name="recruit-pojo" />
       </profile>
     </annotationProcessing>
   </component>
