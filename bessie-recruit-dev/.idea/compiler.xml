@@ -7,16 +7,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="recruit-pojo" />
-        <module name="service-user-7001" />
-        <module name="service-company-6001" />
         <module name="recruit-common" />
+        <module name="recruit-pojo" />
         <module name="recruit-api" />
+        <module name="service-company-6001" />
+        <module name="service-user-7001" />
+        <module name="gateway-8000" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="gateway-8000" options="-parameters" />
       <module name="recruit-api" options="-parameters" />
       <module name="recruit-common" options="-parameters" />
       <module name="recruit-pojo" options="-parameters" />
