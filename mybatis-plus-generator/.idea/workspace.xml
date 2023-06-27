@@ -2,42 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7138c5b-7254-4346-9c00-8028b308a9ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../bessie-recruit-dev/gateway-8000/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bessie-recruit-dev/gateway-8000/src/main/java/com/bessie/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bessie-recruit-dev/gateway-8000/src/main/java/com/bessie/controller/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bessie-recruit-dev/gateway-8000/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/src/main/resources/application-prod.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-api/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-api/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-api/target/recruit-api-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-api/target/recruit-api.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-api/target/recruit-api.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-common/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-common/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-common/target/recruit-common-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-common/target/recruit-common.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-common/target/recruit-common.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-pojo/target/classes/META-INF/recruit-pojo.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-pojo/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-pojo/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-pojo/target/recruit-pojo-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-pojo/target/recruit-pojo.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-pojo/target/recruit-pojo.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/service-company-6001/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/service-company-6001/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/service-company-6001/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/service-company-6001/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/service-company-6001/target/service-user-6001-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/service-company-6001/target/service-user-6001.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/service-company-6001/target/service-user-6001.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/src/main/resources/temp-bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/src/main/resources/temp-application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/gateway-8000/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/src/main/resources/temp-application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/gateway-8000/src/main/resources/application-prod.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/target/service-user-7001-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/target/service-user-7001.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/target/service-user-7001.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/src/main/java/com/bessie/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/src/main/java/com/bessie/controller/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/target/classes/com/bessie/controller/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/target/classes/com/bessie/controller/HelloController.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />

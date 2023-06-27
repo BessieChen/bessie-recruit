@@ -5,10 +5,10 @@ import com.bessie.pojo.test.Stu;
 import com.bessie.service.StuService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * @program: bessie-recruit-dev
@@ -36,17 +36,21 @@ public class HelloController {
         return "Hello, this is stu";
     }
 
+    @Value("${server.port}")
+    private String port;
+
     @GetMapping("hello")
     public Object hello(){
-        Stu stu = new Stu();
-        stu.setAge(12);
-        Stu stu1 = new Stu("123", 123, 123);
-        Stu stu2 = new Stu();
-
-        log.info("info");
-        log.debug("debug");
-        log.warn("warn");
-        log.error("error");
+//        Stu stu = new Stu();
+//        stu.setAge(12);
+//        Stu stu1 = new Stu("123", 123, 123);
+//        Stu stu2 = new Stu();
+//
+//        log.info("info");
+//        log.debug("debug");
+//        log.warn("warn");
+//        log.error("error");
+        log.error("lb测试，当前端口号为：" + port);
 
         return "Hello, this is Bessie recruit";
     }
