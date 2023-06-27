@@ -48,6 +48,15 @@
 <!--            <artifactId>spring-cloud-starter-bootstrap</artifactId>-->
 <!--        </dependency>-->
 
+        <!-- 第三方云厂商相关的依赖 -->
+        <dependency>
+            <groupId>com.tencentcloudapi</groupId>
+            <artifactId>tencentcloud-sdk-java</artifactId>
+            <!-- go to https://search.maven.org/search?q=tencentcloud-sdk-java and get the latest version. -->
+            <!-- 请到https://search.maven.org/search?q=tencentcloud-sdk-java查询所有版本，最新版本如下 -->
+            <version>3.1.598</version>
+        </dependency>
+
         <!-- mysql 驱动 -->
         <dependency>
             <groupId>mysql</groupId>

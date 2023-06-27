@@ -3,6 +3,8 @@ package com.bessie.controller;
 import com.bessie.grace.result.GraceJsonResult;
 import com.bessie.pojo.test.Stu;
 import com.bessie.service.StuService;
+import com.bessie.utils.MyInfo;
+import com.bessie.utils.SMSUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -61,6 +63,18 @@ public class HelloController {
         return GraceJsonResult.ok(stu);
 //        return GraceJsonResult.errorCustom(ResponseStatusEnum.SYSTEM_IO);
 
+    }
+
+    @Autowired
+    private SMSUtils smsUtils;
+
+    @GetMapping("sms")
+    public Object sms() throws Exception {
+
+        String code = "123456";
+        smsUtils.sendSMS(MyInfo.getMobile(), code);
+
+        return GraceJsonResult.ok();
     }
 
 }
