@@ -6,6 +6,8 @@ server:
 
 #
 spring:
+  application:
+    name: user-service
   profiles:
     active: dev
   banner:
@@ -24,3 +26,4 @@ mybatis-plus:
     db-config:
       id-type: assign-id
     banner: false
+

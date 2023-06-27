@@ -1,11 +1,13 @@
 server:
-#  port: 6001
+  port: 6001
   tomcat:
     uri-encoding: UTF-8
     max-swallow-size: -1
 
 spring:
+  application:
+    name: company-service
   profiles:
-    active: prod
+    active: dev #会覆盖掉上面的 port:6001
   banner:
     location: classpath:banner/banner.txt
