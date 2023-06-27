@@ -1,0 +1,5 @@
+com/bessie/service/UsersService.class
+com/bessie/controller/AuthController.class
+com/bessie/Application.class
+com/bessie/service/impl/UsersServiceImpl.class
+com/bessie/mapper/UsersMapper.class
