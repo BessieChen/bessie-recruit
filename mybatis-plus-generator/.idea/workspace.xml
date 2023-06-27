@@ -2,21 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7138c5b-7254-4346-9c00-8028b308a9ea" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/service-company-6001/src/main/java/com/bessie/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/service-company-6001/src/main/java/com/bessie/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/service-company-6001/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/service-company-6001/src/main/resources/application-dev.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/service-company-6001/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/service-company-6001/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/service-company-6001/target/classes/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/service-company-6001/target/classes/application-dev.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/service-company-6001/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/service-company-6001/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/service-company-6001/target/classes/com/bessie/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/service-company-6001/target/classes/com/bessie/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/src/main/java/com/bessie/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/src/main/java/com/bessie/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/target/classes/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/target/classes/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/target/classes/com/bessie/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/target/classes/com/bessie/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/target/service-user-7001.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/target/service-user-7001.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -208,6 +199,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1141" height="747" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3057325" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
