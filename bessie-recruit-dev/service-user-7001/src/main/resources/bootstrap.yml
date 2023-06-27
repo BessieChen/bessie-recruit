@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: user-service
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.31.219:8848
+        namespace: 73c92499-6824-4462-a473-50e1fad4dbe2 #等同于 bessie-recruit-dev 这个namespace
+        group: dev
+        name: user-service.yaml
+        prefix: user-service
+        file-extension: yaml
