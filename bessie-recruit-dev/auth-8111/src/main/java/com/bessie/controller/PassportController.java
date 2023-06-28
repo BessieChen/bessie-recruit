@@ -2,6 +2,7 @@ package com.bessie.controller;
 
 import com.bessie.base.BaseInfoProperties;
 import com.bessie.grace.result.GraceJsonResult;
+import com.bessie.utils.IPUtil;
 import com.bessie.utils.SMSUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
@@ -34,12 +35,16 @@ public class PassportController extends BaseInfoProperties {
             return GraceJsonResult.error();
         }
 
+        String userIp = IPUtil.getRequestIp(request); // 获得用户ip
+        redis.setnx60s(MOBILE_SMSCODE + ":" + userIp, "no matter what value");
+            // 根据用户ip进行限制，限制用户在60秒之内只能获得一次验证码
+            // 写锁, 只要还存在, 就返回对应的错误, 不执行后序的代码
+
         String code = (int)((Math.random() * 9 + 1) * 100000) + "";
-        smsUtils.sendSMS(mobile, code);
+        //smsUtils.sendSMS(mobile, code); //我们之前发成功了一次, 现在就不必再发了, 否则腾讯云把你禁了
         log.error("验证码为: {}", code);
 
         redis.set(MOBILE_SMSCODE + ":" + mobile, code, 30 * 60);
-
 
         return GraceJsonResult.ok();
     }

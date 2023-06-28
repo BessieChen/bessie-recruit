@@ -5,6 +5,7 @@ com/bessie/utils/SMSUtils.class
 com/bessie/grace/result/GraceJsonResult.class
 com/bessie/base/BaseInfoProperties.class
 com/bessie/utils/RedisOperator.class
+com/bessie/utils/IPUtil.class
 com/bessie/grace/result/ResponseStatusEnum.class
 com/bessie/utils/MyInfo.class
 com/bessie/utils/TencentCloudProperties.class
