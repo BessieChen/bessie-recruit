@@ -1,7 +1,11 @@
 package com.bessie.api.intercept;
 
 import com.bessie.base.BaseInfoProperties;
+import com.bessie.exceptions.GraceException;
+import com.bessie.exceptions.MyCustomException;
+import com.bessie.grace.result.ResponseStatusEnum;
 import com.bessie.utils.IPUtil;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -14,6 +18,7 @@ import javax.servlet.http.HttpServletResponse;
  * @author: Bessie
  * @create: 2023-06-28 16:42
  **/
+@Slf4j
 public class SMSInterceptor extends BaseInfoProperties implements HandlerInterceptor {
     /**
      * 拦截请求，访问controller之前
@@ -30,7 +35,8 @@ public class SMSInterceptor extends BaseInfoProperties implements HandlerInterce
         String userIp = IPUtil.getRequestIp(request);
         boolean keyIsExist = redis.keyIsExist(MOBILE_SMSCODE + ":" + userIp);
         if (keyIsExist) {
-            System.out.println("短信发送频率太大！");
+            log.error("短信发送频率太大！");
+            GraceException.doException(ResponseStatusEnum.SMS_NEED_WAIT_ERROR); //SMS_NEED_WAIT_ERROR(505,false,"短信发送太快啦~请稍后再试！"),
             return false;
         }
 
