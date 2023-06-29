@@ -2,6 +2,7 @@ package com.bessie.controller;
 
 import com.bessie.base.BaseInfoProperties;
 import com.bessie.grace.result.GraceJsonResult;
+import com.bessie.pojo.bo.RegistLoginBO;
 import com.bessie.utils.IPUtil;
 import com.bessie.utils.SMSUtils;
 import lombok.extern.slf4j.Slf4j;
@@ -10,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.validation.Valid;
 
 /**
  * @program: bessie-recruit-dev
@@ -46,5 +48,18 @@ public class PassportController extends BaseInfoProperties {
 
         return GraceJsonResult.ok();
     }
+
+    @PostMapping("login")
+    public GraceJsonResult login(@Valid @RequestBody RegistLoginBO registLoginBO,
+                                 HttpServletRequest request) throws Exception {
+
+        String mobile = registLoginBO.getMobile();
+        String smsCdoe = registLoginBO.getSmsCode();
+
+
+        return GraceJsonResult.ok();
+    }
+
+
 
 }

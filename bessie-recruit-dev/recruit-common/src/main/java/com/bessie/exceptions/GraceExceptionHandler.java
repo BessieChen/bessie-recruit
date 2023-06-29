@@ -1,8 +1,10 @@
 package com.bessie.exceptions;
 
 import com.bessie.grace.result.GraceJsonResult;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -20,6 +22,7 @@ import java.util.Map;
  * @create: 2023-06-28 19:23
  **/
 @ControllerAdvice
+@Slf4j
 public class GraceExceptionHandler {
 
     @ExceptionHandler(MyCustomException.class)
@@ -29,20 +32,25 @@ public class GraceExceptionHandler {
         return GraceJsonResult.exception(e.getResponseStatusEnum());
     }
 
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    @ResponseBody
+    public GraceJsonResult returnMethodArgumentNotValid(MethodArgumentNotValidException e) {
+        BindingResult result = e.getBindingResult(); //BindingResult 可以获得错误因袭
+        Map<String, String> map = getErrors(result); //getError()实现见下.
+
+        log.error("show?");
+
+        return GraceJsonResult.errorMap(map);
+    }
+
     public Map<String, String> getErrors(BindingResult result) {
-
         Map<String, String> map = new HashMap<>();
-
         List<FieldError> errorList = result.getFieldErrors();
-        for (FieldError fe : errorList) {
-            // 错误所对应的属性字段名
-            String field = fe.getField();
-            // 错误信息
-            String message = fe.getDefaultMessage();
-
-            map.put(field, message);
+        for (FieldError ff : errorList) {
+            String field = ff.getField(); // 错误所对应的属性字段名
+            String msg = ff.getDefaultMessage(); // 错误的信息
+            map.put(field, msg);
         }
-
         return map;
     }
 
