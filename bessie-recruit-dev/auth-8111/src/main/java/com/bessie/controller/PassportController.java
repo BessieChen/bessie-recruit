@@ -5,16 +5,19 @@ import com.bessie.grace.result.GraceJsonResult;
 import com.bessie.grace.result.ResponseStatusEnum;
 import com.bessie.pojo.Users;
 import com.bessie.pojo.bo.RegistLoginBO;
+import com.bessie.pojo.vo.UsersVO;
 import com.bessie.service.UsersService;
 import com.bessie.utils.IPUtil;
 import com.bessie.utils.SMSUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
+import java.util.UUID;
 
 /**
  * @program: bessie-recruit-dev
@@ -76,11 +79,32 @@ public class PassportController extends BaseInfoProperties {
             user = usersService.createUser(mobile);
         }
 
-        // 3. 用户登录注册成功以后，删除redis中的短信验证码
+        // 3. 如果不为空，可以继续下方业务，可以保存用户会话信息
+        String uToken = TOKEN_USER_PREFIX + SYMBOL_DOT + UUID.randomUUID().toString();
+        redis.set(REDIS_USER_TOKEN + ":" + user.getId(), uToken);
+
+
+        // 4. 用户登录注册成功以后，删除redis中的短信验证码
         redis.del(MOBILE_SMSCODE + ":" + mobile);
 
+        // 5. 返回用户信息，包含token令牌
+        UsersVO usersVO = new UsersVO();
+        BeanUtils.copyProperties(user, usersVO);
+        usersVO.setUserToken(uToken);
+
+
         // 4. 返回用户信息
-        return GraceJsonResult.ok(user);
+        return GraceJsonResult.ok(usersVO); //GraceJsonResult.ok(user);
+    }
+
+    @PostMapping("logout")
+    public GraceJsonResult logout(@RequestParam String userId,
+                                  HttpServletRequest request) throws Exception {
+
+        // 后端只需要清除用户的token信息即可，前端也需要清除相关的用户信息
+        redis.del(REDIS_USER_TOKEN + ":" + userId);
+
+        return GraceJsonResult.ok();
     }
 
 }
