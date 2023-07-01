@@ -13,4 +13,14 @@ import com.bessie.pojo.Users;
  */
 public interface UsersService extends IService<Users> {
 
+    /**
+     * 判断用户是否存在，如果存在则返回用户信息
+     */
+    public Users queryMobileIsExist(String mobile); //find mobile
+
+    /**
+     * 创建用户信息，并且返回用户对象
+     */
+    public Users createUser(String mobile);
+
 }

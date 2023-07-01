@@ -2,7 +2,10 @@ package com.bessie.controller;
 
 import com.bessie.base.BaseInfoProperties;
 import com.bessie.grace.result.GraceJsonResult;
+import com.bessie.grace.result.ResponseStatusEnum;
+import com.bessie.pojo.Users;
 import com.bessie.pojo.bo.RegistLoginBO;
+import com.bessie.service.UsersService;
 import com.bessie.utils.IPUtil;
 import com.bessie.utils.SMSUtils;
 import lombok.extern.slf4j.Slf4j;
@@ -26,6 +29,9 @@ public class PassportController extends BaseInfoProperties {
 
     @Autowired
     private SMSUtils smsUtils;
+
+    @Autowired
+    private UsersService usersService;
 
     @PostMapping("getSMSCode")
     public GraceJsonResult getSMSCode(String mobile, //@RequestParam String mobile,
@@ -54,12 +60,27 @@ public class PassportController extends BaseInfoProperties {
                                  HttpServletRequest request) throws Exception {
 
         String mobile = registLoginBO.getMobile();
-        String smsCdoe = registLoginBO.getSmsCode();
+        String code = registLoginBO.getSmsCode();
 
 
-        return GraceJsonResult.ok();
+        // 1. 从redis中获得验证码进行校验是否匹配
+        String redisCode = redis.get(MOBILE_SMSCODE + ":" + mobile);
+        if (StringUtils.isBlank(redisCode) || !redisCode.equalsIgnoreCase(code)) {
+            return GraceJsonResult.errorCustom(ResponseStatusEnum.SMS_CODE_ERROR);
+        }
+
+        // 2. 查询数据库，判断用户是否存在
+        Users user = usersService.queryMobileIsExist(mobile);
+        if (user == null) {
+            // 2.1 如果用户为空，表示没有注册过，则为null，需要注册信息入库
+            user = usersService.createUser(mobile);
+        }
+
+        // 3. 用户登录注册成功以后，删除redis中的短信验证码
+        redis.del(MOBILE_SMSCODE + ":" + mobile);
+
+        // 4. 返回用户信息
+        return GraceJsonResult.ok(user);
     }
-
-
 
 }
