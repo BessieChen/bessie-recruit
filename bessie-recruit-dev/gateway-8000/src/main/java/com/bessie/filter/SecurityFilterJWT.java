@@ -1,18 +1,23 @@
 package com.bessie.filter;
 
 import com.bessie.base.BaseInfoProperties;
-import com.bessie.exceptions.GraceException;
+import com.bessie.grace.result.GraceJsonResult;
 import com.bessie.grace.result.ResponseStatusEnum;
+import com.google.gson.Gson;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
 import org.springframework.core.Ordered;
+import org.springframework.core.io.buffer.DataBuffer;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.server.reactive.ServerHttpResponse;
 import org.springframework.stereotype.Component;
 import org.springframework.util.AntPathMatcher;
 import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
 
+import java.nio.charset.StandardCharsets;
 import java.util.List;
 
 @Component
@@ -50,8 +55,42 @@ public class SecurityFilterJWT extends BaseInfoProperties implements GlobalFilte
         log.warn("被拦截: SecurityFilterJWT url=" + url);
 
         //  无法触发全局异常拦截处理，需要手动返回
-        GraceException.doException(ResponseStatusEnum.UN_LOGIN);
-        return chain.filter(exchange);
+        //GraceException.doException(ResponseStatusEnum.UN_LOGIN);
+        //return chain.filter(exchange);
+
+        // 默认不放行，没有token则返回错误，到达这里的都是漏掉的没有在ExcludeUrlPath中配置
+        return renderErrorMsg(exchange, ResponseStatusEnum.UN_LOGIN);
+    }
+
+    /**
+     * 包装并且返回错误信息
+     * @param exchange
+     * @param statusEnum
+     * @return
+     */
+    public Mono<Void> renderErrorMsg(ServerWebExchange exchange,
+                                     ResponseStatusEnum statusEnum) {
+        // 1. 获得response
+        ServerHttpResponse httpResponse = exchange.getResponse();
+
+        // 2. 构建jsonResult, 这个就是我们最终要返回的 json 对象{枚举类 UN_LOGIN}
+        GraceJsonResult graceJSONResult = GraceJsonResult.exception(statusEnum);
+
+        // 3. 修改code为{错误码500}
+        httpResponse.setStatusCode(HttpStatus.INTERNAL_SERVER_ERROR);
+
+        // 4. 设定返回json类型
+        if (!httpResponse.getHeaders().containsKey("Content-Type")) {
+            httpResponse.getHeaders().add("Content-Type", "application/json");
+        }
+
+        // 5. 转换json字符串，并且向response中写入数据
+        String resultJson = new Gson().toJson(graceJSONResult);
+        DataBuffer buffer = httpResponse
+                .bufferFactory()
+                .wrap(resultJson.getBytes(StandardCharsets.UTF_8));
+
+        return httpResponse.writeWith(Mono.just(buffer));
     }
 
 
