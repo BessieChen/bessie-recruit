@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "exclude",
+      "type": "com.bessie.filter.ExcludeUrlProperties",
+      "sourceType": "com.bessie.filter.ExcludeUrlProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "exclude.ip-limit-urls",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.bessie.filter.ExcludeUrlProperties"
+    },
+    {
+      "name": "exclude.urls",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.bessie.filter.ExcludeUrlProperties"
+    }
+  ],
+  "hints": []
+}
