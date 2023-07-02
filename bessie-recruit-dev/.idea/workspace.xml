@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b78f2aa9-8747-4e55-a2a8-4043cac91874" name="Default Changelist" comment="" />
+    <list default="true" id="b78f2aa9-8747-4e55-a2a8-4043cac91874" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/recruit-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/recruit-common/pom.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/recruit-common/target/" />
@@ -38,10 +40,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/controller/PassportController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
+            <state relative-caret-position="110">
               <caret line="83" column="51" selection-start-line="83" selection-start-column="51" selection-end-line="83" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -51,11 +53,20 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/recruit-common/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="100" column="8" selection-start-line="100" selection-start-column="8" selection-end-line="100" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/recruit-pojo/src/main/java/com/bessie/pojo/Users.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="379">
-              <caret line="104" lean-forward="true" selection-start-line="104" selection-end-line="104" />
+              <caret line="104" selection-start-line="104" selection-end-line="104" />
               <folding>
                 <element signature="e#1658#1659#0" expanded="true" />
                 <element signature="e#1683#1684#0" expanded="true" />
@@ -85,19 +96,6 @@
               <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/recruit-common/src/main/java/com/bessie/exceptions/GraceException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="34" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="34" />
-              <folding>
-                <element signature="e#302#303#0" expanded="true" />
-                <element signature="e#357#358#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -198,7 +196,6 @@
         <option value="$PROJECT_DIR$/auth-8111/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/controller/AuthController.java" />
         <option value="$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/mapper/UsersMapper.java" />
-        <option value="$PROJECT_DIR$/recruit-common/pom.xml" />
         <option value="$PROJECT_DIR$/recruit-common/src/main/java/com/bessie/utils/RedisOperator.java" />
         <option value="$PROJECT_DIR$/recruit-common/src/main/java/com/bessie/base/BaseInfoProperties.java" />
         <option value="$PROJECT_DIR$/gateway-8000/src/main/resources/application-dev.yml" />
@@ -222,6 +219,7 @@
         <option value="$PROJECT_DIR$/recruit-common/src/main/java/com/bessie/enums/UserInfoModifyType.java" />
         <option value="$PROJECT_DIR$/recruit-pojo/src/main/java/com/bessie/pojo/vo/UsersVO.java" />
         <option value="$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/controller/PassportController.java" />
+        <option value="$PROJECT_DIR$/recruit-common/pom.xml" />
       </list>
     </option>
   </component>
@@ -629,8 +627,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="317" y="25" width="1363" height="958" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8469101" visible="true" weight="0.28841788" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8469101" visible="true" weight="0.28841788" />
       <window_info id="Structure" order="1" sideWeight="0.5010799" side_tool="true" weight="0.24958949" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -639,7 +638,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.15308988" side_tool="true" weight="0.29620853" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" x="231" y="411" width="1218" height="227" id="Run" order="2" sideWeight="0.785772" visible="true" weight="0.25930232" />
+      <window_info anchor="bottom" x="231" y="411" width="1218" height="227" id="Run" order="2" sideWeight="0.785772" visible="true" weight="0.25930232" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.36699507" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -717,13 +716,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recruit-common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="606">
-          <caret line="79" column="21" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1032,7 +1024,7 @@
     <entry file="file://$PROJECT_DIR$/recruit-pojo/src/main/java/com/bessie/pojo/Users.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="379">
-          <caret line="104" lean-forward="true" selection-start-line="104" selection-end-line="104" />
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
           <folding>
             <element signature="e#1658#1659#0" expanded="true" />
             <element signature="e#1683#1684#0" expanded="true" />
@@ -1052,12 +1044,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/controller/PassportController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
+        <state relative-caret-position="110">
           <caret line="83" column="51" selection-start-line="83" selection-start-column="51" selection-end-line="83" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getSMSCode#0;class#PassportController#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recruit-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="100" column="8" selection-start-line="100" selection-start-column="8" selection-end-line="100" selection-end-column="8" />
         </state>
       </provider>
     </entry>
