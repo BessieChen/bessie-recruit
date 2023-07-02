@@ -2,6 +2,9 @@ package com.bessie.test;
 
 import com.bessie.pojo.test.Stu;
 import com.google.gson.Gson;
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.Jws;
+import io.jsonwebtoken.JwtParser;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys;
 import org.junit.jupiter.api.Test;
@@ -41,6 +44,31 @@ public class JWTTest {
                 .compact();             // 压缩并且生成jwt
 
         System.out.println(myJWT);
+    }
+
+    @Test
+    public void checkJWT() { //校验
+        // 模拟假设从前端获得的jwt
+        String jwt = "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ7XCJuYW1lXCI6XCJiZXNzaWUtcmVjcnVpdFwiLFwiYWdlXCI6MTAwMSxcImlkXCI6MTh9In0.RvMV8lbcxRtakX-Mn7ImUszzMftZgLAEfpUcACCBg3A";
+        //上节课生成的
+
+        // 1. 对秘钥进行base64编码
+        String base64 = new BASE64Encoder().encode(USER_KEY.getBytes());
+        System.out.println(base64);
+
+        // 2. 对base64生成秘钥对象，自动选择加密算法
+        SecretKey secretKey = Keys.hmacShaKeyFor(base64.getBytes());
+
+        // 3. 校验JWT
+        JwtParser jwtParser = Jwts.parserBuilder().setSigningKey(secretKey).build();    // 构建jwt解析器
+        // parse解析成功，获得claims，如果这里抛出异常，说明解析不通过，前端token被篡改了
+        Jws<Claims> claimsJws = jwtParser.parseClaimsJws(jwt);      // 解析jwt
+
+        String stuJson = claimsJws.getBody().getSubject();     // 获得主体body
+        System.out.println(stuJson);
+        Stu stu = new Gson().fromJson(stuJson, Stu.class);
+
+        System.out.println(stu);
     }
 
 }

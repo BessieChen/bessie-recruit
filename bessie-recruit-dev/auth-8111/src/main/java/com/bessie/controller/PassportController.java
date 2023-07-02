@@ -8,7 +8,9 @@ import com.bessie.pojo.bo.RegistLoginBO;
 import com.bessie.pojo.vo.UsersVO;
 import com.bessie.service.UsersService;
 import com.bessie.utils.IPUtil;
+import com.bessie.utils.JWTUtils;
 import com.bessie.utils.SMSUtils;
+import com.google.gson.Gson;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
@@ -35,6 +37,9 @@ public class PassportController extends BaseInfoProperties {
 
     @Autowired
     private UsersService usersService;
+
+    @Autowired
+    private JWTUtils jwtUtils;
 
     @PostMapping("getSMSCode")
     public GraceJsonResult getSMSCode(String mobile, //@RequestParam String mobile,
@@ -80,8 +85,11 @@ public class PassportController extends BaseInfoProperties {
         }
 
         // 3. 如果不为空，可以继续下方业务，可以保存用户会话信息
-        String uToken = TOKEN_USER_PREFIX + SYMBOL_DOT + UUID.randomUUID().toString();
-        redis.set(REDIS_USER_TOKEN + ":" + user.getId(), uToken);
+        //String uToken = TOKEN_USER_PREFIX + SYMBOL_DOT + UUID.randomUUID().toString();
+        //redis.set(REDIS_USER_TOKEN + ":" + user.getId(), uToken);
+        String jwt = jwtUtils.createJWTWithPrefix(new Gson().toJson(user),
+                                                    Long.valueOf(60 * 1000),
+                                                    TOKEN_USER_PREFIX);
 
 
         // 4. 用户登录注册成功以后，删除redis中的短信验证码
@@ -90,7 +98,7 @@ public class PassportController extends BaseInfoProperties {
         // 5. 返回用户信息，包含token令牌
         UsersVO usersVO = new UsersVO();
         BeanUtils.copyProperties(user, usersVO);
-        usersVO.setUserToken(uToken);
+        usersVO.setUserToken(jwt);          //usersVO.setUserToken(uToken);
 
 
         // 4. 返回用户信息
@@ -102,7 +110,7 @@ public class PassportController extends BaseInfoProperties {
                                   HttpServletRequest request) throws Exception {
 
         // 后端只需要清除用户的token信息即可，前端也需要清除相关的用户信息
-        redis.del(REDIS_USER_TOKEN + ":" + userId);
+        // redis.del(REDIS_USER_TOKEN + ":" + userId);
 
         return GraceJsonResult.ok();
     }
