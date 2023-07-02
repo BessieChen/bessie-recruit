@@ -1,6 +1,7 @@
 /Users/bessie/Desktop/JOB/whole_systems/6_program/3_java/java-senior/bessie-recruit/bessie-recruit-dev/recruit-common/src/main/java/com/bessie/utils/SMSUtils.java
 /Users/bessie/Desktop/JOB/whole_systems/6_program/3_java/java-senior/bessie-recruit/bessie-recruit-dev/recruit-common/src/main/java/com/bessie/enums/PaymentStatus.java
 /Users/bessie/Desktop/JOB/whole_systems/6_program/3_java/java-senior/bessie-recruit/bessie-recruit-dev/recruit-common/src/main/java/com/bessie/enums/ArticleStatus.java
+/Users/bessie/Desktop/JOB/whole_systems/6_program/3_java/java-senior/bessie-recruit/bessie-recruit-dev/recruit-common/src/main/java/com/bessie/enums/ResponseStatusEnum.java
 /Users/bessie/Desktop/JOB/whole_systems/6_program/3_java/java-senior/bessie-recruit/bessie-recruit-dev/recruit-common/src/main/java/com/bessie/exceptions/GraceException.java
 /Users/bessie/Desktop/JOB/whole_systems/6_program/3_java/java-senior/bessie-recruit/bessie-recruit-dev/recruit-common/src/main/java/com/bessie/enums/CompanyReviewStatus.java
 /Users/bessie/Desktop/JOB/whole_systems/6_program/3_java/java-senior/bessie-recruit/bessie-recruit-dev/recruit-common/src/main/java/com/bessie/utils/MyInfo.java
@@ -24,11 +25,13 @@
 /Users/bessie/Desktop/JOB/whole_systems/6_program/3_java/java-senior/bessie-recruit/bessie-recruit-dev/recruit-common/src/main/java/com/bessie/enums/MsgReveiverTypeEnum.java
 /Users/bessie/Desktop/JOB/whole_systems/6_program/3_java/java-senior/bessie-recruit/bessie-recruit-dev/recruit-common/src/main/java/com/bessie/enums/DelayTimes.java
 /Users/bessie/Desktop/JOB/whole_systems/6_program/3_java/java-senior/bessie-recruit/bessie-recruit-dev/recruit-common/src/main/java/com/bessie/enums/UserInfoModifyType.java
+/Users/bessie/Desktop/JOB/whole_systems/6_program/3_java/java-senior/bessie-recruit/bessie-recruit-dev/recruit-common/src/main/java/com/bessie/utils/JWTUtils.java
 /Users/bessie/Desktop/JOB/whole_systems/6_program/3_java/java-senior/bessie-recruit/bessie-recruit-dev/recruit-common/src/main/java/com/bessie/enums/PayMethod.java
 /Users/bessie/Desktop/JOB/whole_systems/6_program/3_java/java-senior/bessie-recruit/bessie-recruit-dev/recruit-common/src/main/java/com/bessie/utils/TencentCloudProperties.java
 /Users/bessie/Desktop/JOB/whole_systems/6_program/3_java/java-senior/bessie-recruit/bessie-recruit-dev/recruit-common/src/main/java/com/bessie/enums/JobStatus.java
 /Users/bessie/Desktop/JOB/whole_systems/6_program/3_java/java-senior/bessie-recruit/bessie-recruit-dev/recruit-common/src/main/java/com/bessie/utils/RedisOperator.java
 /Users/bessie/Desktop/JOB/whole_systems/6_program/3_java/java-senior/bessie-recruit/bessie-recruit-dev/recruit-common/src/main/java/com/bessie/enums/MsgTypeEnum.java
+/Users/bessie/Desktop/JOB/whole_systems/6_program/3_java/java-senior/bessie-recruit/bessie-recruit-dev/recruit-common/src/main/java/com/bessie/utils/JWTProperties.java
 /Users/bessie/Desktop/JOB/whole_systems/6_program/3_java/java-senior/bessie-recruit/bessie-recruit-dev/recruit-common/src/main/java/com/bessie/utils/IPUtil.java
 /Users/bessie/Desktop/JOB/whole_systems/6_program/3_java/java-senior/bessie-recruit/bessie-recruit-dev/recruit-common/src/main/java/com/bessie/enums/OrderStatus.java
 /Users/bessie/Desktop/JOB/whole_systems/6_program/3_java/java-senior/bessie-recruit/bessie-recruit-dev/recruit-common/src/main/java/com/bessie/utils/LocalDateUtils.java

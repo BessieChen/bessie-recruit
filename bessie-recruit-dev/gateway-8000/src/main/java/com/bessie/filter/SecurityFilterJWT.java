@@ -3,13 +3,17 @@ package com.bessie.filter;
 import com.bessie.base.BaseInfoProperties;
 import com.bessie.grace.result.GraceJsonResult;
 import com.bessie.grace.result.ResponseStatusEnum;
+import com.bessie.utils.JWTUtils;
 import com.google.gson.Gson;
+import io.jsonwebtoken.ExpiredJwtException;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
 import org.springframework.core.Ordered;
 import org.springframework.core.io.buffer.DataBuffer;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.server.reactive.ServerHttpResponse;
 import org.springframework.stereotype.Component;
@@ -24,8 +28,13 @@ import java.util.List;
 @Slf4j
 public class SecurityFilterJWT extends BaseInfoProperties implements GlobalFilter, Ordered {
 
+    public static final String HEADER_USER_TOKEN = "headerUserToken";
+
     @Autowired
     private ExcludeUrlProperties excludeUrlProperties;
+
+    @Autowired
+    private JWTUtils jwtUtils;
 
     // 路径匹配的规则器
     private AntPathMatcher antPathMatcher = new AntPathMatcher();
@@ -54,12 +63,45 @@ public class SecurityFilterJWT extends BaseInfoProperties implements GlobalFilte
         // 到达此处表示被拦截
         log.warn("被拦截: SecurityFilterJWT url=" + url);
 
-        //  无法触发全局异常拦截处理，需要手动返回
-        //GraceException.doException(ResponseStatusEnum.UN_LOGIN);
-        //return chain.filter(exchange);
+        // 判断header中是否有token，对用户请求进行判断过滤
+        HttpHeaders headers = exchange.getRequest().getHeaders();
+        String userToken = headers.getFirst(HEADER_USER_TOKEN);
+        //不要自定义"headerUserToken", 和前端联调就是这个名字, 否则无法获得 jwt
+
+        //header 判空token
+        //bes: 所以我们的逻辑是, 只要有一个条件允许放行那就放行, 什么条件都没有通过才是拦截. 所以更像是"默认你是好人,无罪假定"
+        if (StringUtils.isNotBlank(userToken)) {
+            // 分割判断token来源（app/saas/admin）
+            String[] tokenArr = userToken.split("@");
+            if (tokenArr.length < 2) {
+                return renderErrorMsg(exchange, ResponseStatusEnum.UN_LOGIN);
+            }
+            // 获得前缀与jwt令牌
+            String prefix = tokenArr[0];
+            String jwt = tokenArr[1];
+
+            return dealJWT(jwt, exchange, chain);
+        }
 
         // 默认不放行，没有token则返回错误，到达这里的都是漏掉的没有在ExcludeUrlPath中配置
         return renderErrorMsg(exchange, ResponseStatusEnum.UN_LOGIN);
+    }
+
+    public Mono<Void> dealJWT(String jwt, ServerWebExchange exchange, GatewayFilterChain chain) {
+        try {
+            String userJson = jwtUtils.checkJWT(jwt);
+            //checkJWT()若出现异常, 这个异常的拦截, 上节说了, 我们不能用全局的统一异常去处理的. 所以需要手动拦截 checkJWT()的异常
+            //所以就直接使用 try{} catch(){}
+            //快捷键: alt + cmd: 选择 try+catch
+            log.info("JWT校验完毕，userJson = " + userJson);
+            return chain.filter(exchange); //既然没有报异常, 那就是jwt校验通过了, 放行
+        } catch (ExpiredJwtException e) { //对应"过期"的exception, 是官方实现的
+            e.printStackTrace();
+            return renderErrorMsg(exchange, ResponseStatusEnum.JWT_EXPIRE_ERROR); //jwt过期了
+        } catch (Exception e) { //更大范围的 exception
+            e.printStackTrace();
+            return renderErrorMsg(exchange, ResponseStatusEnum.JWT_SIGNATURE_ERROR);
+        }
     }
 
     /**

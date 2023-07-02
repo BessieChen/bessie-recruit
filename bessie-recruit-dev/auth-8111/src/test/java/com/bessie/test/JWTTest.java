@@ -48,9 +48,12 @@ public class JWTTest {
 
     @Test
     public void checkJWT() { //校验
-        // 模拟假设从前端获得的jwt
+        // 模拟假设从前端获得的jwt, 上节课生成的
         String jwt = "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ7XCJuYW1lXCI6XCJiZXNzaWUtcmVjcnVpdFwiLFwiYWdlXCI6MTAwMSxcImlkXCI6MTh9In0.RvMV8lbcxRtakX-Mn7ImUszzMftZgLAEfpUcACCBg3A";
-        //上节课生成的
+
+        //错误jwt
+        //String jwt = "xxxGciOiJIUzI1NiJ9.eyJzdWIiOiJ7XCJuYW1lXCI6XCJiZXNzaWUtcmVjcnVpdFwiLFwiYWdlXCI6MTAwMSxcImlkXCI6MTh9In0.RvMV8lbcxRtakX-Mn7ImUszzMftZgLAEfpUcACCBg3A";
+
 
         // 1. 对秘钥进行base64编码
         String base64 = new BASE64Encoder().encode(USER_KEY.getBytes());
