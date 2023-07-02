@@ -80,6 +80,12 @@
         </dependency>
 
 
+        <!-- 引入 spring boot test 依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+        </dependency>
+
         <!-- 引入 JJWT 依赖 -->
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
