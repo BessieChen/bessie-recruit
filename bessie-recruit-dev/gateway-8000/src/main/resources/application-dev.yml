@@ -21,4 +21,11 @@ spring:
         - id: authRoute
           uri: lb://auth-service
           predicates:
-            - Path=/a/**,/passport/**
+            - Path=/a/**,/passport/**,/saas/**
+#      globalcors:           # 配置全局跨域
+#        cors-configurations:
+#          '[/**]':          # 映射路径
+#            allowedOriginPatterns: "*"
+#            allowedHeaders: "*"
+#            allowedMethods: "*"
+#            allowCredentials: true

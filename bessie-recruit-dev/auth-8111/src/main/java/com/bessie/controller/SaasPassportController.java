@@ -27,6 +27,7 @@ public class SaasPassportController extends BaseInfoProperties {
         redis.set(SAAS_PLATFORM_LOGIN_TOKEN + ":" + qrToken,  qrToken, 5*60);
         // 存入redis标记当前的qrToken未被扫描读取
         redis.set(SAAS_PLATFORM_LOGIN_TOKEN_READ + ":" + qrToken,  "0", 5*60);
+        log.warn(qrToken);
 
         //返回给前端，让前端下一次请求的时候需要带上qrToken
         return GraceJsonResult.ok(qrToken);
