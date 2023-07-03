@@ -108,6 +108,7 @@ public class JWTUtils {
         JwtParser jwtParser = Jwts.parserBuilder()
                 .setSigningKey(secretKey)
                 .build();       // 构造解析器
+
         // 解析成功，可以获得Claims，从而去get相关的数据，如果此处抛出异常，则说明解析不通过，也就是token失效或者被篡改
         Jws<Claims> jws = jwtParser.parseClaimsJws(pendingJWT);      // 解析jwt
 
