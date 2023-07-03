@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b78f2aa9-8747-4e55-a2a8-4043cac91874" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-8111/src/test/java/com/bessie/test/JWTTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-8111/src/test/java/com/bessie/test/JWTTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gateway-8000/src/main/java/com/bessie/filter/SecurityFilterJWT.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-8000/src/main/java/com/bessie/filter/SecurityFilterJWT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user-7001/src/main/java/com/bessie/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-user-7001/src/main/java/com/bessie/controller/HelloController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -46,8 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gateway-8000/src/main/java/com/bessie/filter/SecurityFilterJWT.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="30" column="67" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="67" />
+            <state relative-caret-position="485">
+              <caret line="120" column="62" lean-forward="true" selection-start-line="120" selection-start-column="62" selection-end-line="120" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,8 +57,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/service-user-7001/src/main/java/com/bessie/controller/HelloController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="41" column="24" lean-forward="true" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+            <state relative-caret-position="425">
+              <caret line="52" column="16" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -167,7 +169,6 @@
         <option value="$PROJECT_DIR$/recruit-common/src/main/java/com/bessie/utils/MyInfo.java" />
         <option value="$PROJECT_DIR$/recruit-common/src/main/java/com/bessie/utils/SMSUtils.java" />
         <option value="$PROJECT_DIR$/recruit-common/src/main/java/com/bessie/utils/TencentCloudProperties.java" />
-        <option value="$PROJECT_DIR$/service-user-7001/src/main/java/com/bessie/controller/HelloController.java" />
         <option value="$PROJECT_DIR$/auth-8111/pom.xml" />
         <option value="$PROJECT_DIR$/auth-8111/src/main/resources/application-prod.yml" />
         <option value="$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/controller/AuthController.java" />
@@ -205,6 +206,7 @@
         <option value="$PROJECT_DIR$/auth-8111/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/auth-8111/src/test/java/com/bessie/test/JWTTest.java" />
         <option value="$PROJECT_DIR$/gateway-8000/src/main/java/com/bessie/filter/SecurityFilterJWT.java" />
+        <option value="$PROJECT_DIR$/service-user-7001/src/main/java/com/bessie/controller/HelloController.java" />
       </list>
     </option>
   </component>
@@ -240,9 +242,9 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="428" />
-    <option name="y" value="48" />
-    <option name="width" value="1434" />
+    <option name="x" value="256" />
+    <option name="y" value="87" />
+    <option name="width" value="1370" />
     <option name="height" value="958" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -728,9 +730,9 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="428" y="48" width="1434" height="958" extended-state="0" />
+    <frame x="256" y="87" width="1370" height="958" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8469101" visible="true" weight="0.27370688" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8469101" visible="true" weight="0.2868976" />
       <window_info id="Structure" order="1" sideWeight="0.5010799" side_tool="true" weight="0.24958949" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -752,7 +754,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24932249" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" sideWeight="0.4934555" weight="0.38721263" />
+      <window_info anchor="right" id="Maven" order="4" sideWeight="0.4934555" visible="true" weight="0.4058735" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
@@ -764,13 +766,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/gateway-8000/src/main/java/com/bessie/filter/SecurityFilterJWT.java</url>
-          <line>91</line>
+          <line>115</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/gateway-8000/src/main/java/com/bessie/filter/SecurityFilterJWT.java</url>
-          <line>66</line>
+          <line>67</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
@@ -1170,8 +1172,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gateway-8000/src/main/java/com/bessie/filter/SecurityFilterJWT.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="30" column="67" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="67" />
+        <state relative-caret-position="485">
+          <caret line="120" column="62" lean-forward="true" selection-start-line="120" selection-start-column="62" selection-end-line="120" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1180,8 +1182,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/service-user-7001/src/main/java/com/bessie/controller/HelloController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="41" column="24" lean-forward="true" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+        <state relative-caret-position="425">
+          <caret line="52" column="16" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

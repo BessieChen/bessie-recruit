@@ -1,16 +1,21 @@
 package com.bessie.controller;
 
+import com.bessie.base.BaseInfoProperties;
 import com.bessie.grace.result.GraceJsonResult;
+import com.bessie.pojo.Users;
 import com.bessie.pojo.test.Stu;
 import com.bessie.service.StuService;
 import com.bessie.utils.MyInfo;
 import com.bessie.utils.SMSUtils;
+import com.google.gson.Gson;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * @program: bessie-recruit-dev
@@ -21,7 +26,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("u")
 @Slf4j
-public class HelloController {
+public class HelloController extends BaseInfoProperties {
 
     @Autowired
     private StuService stuService;
@@ -42,17 +47,10 @@ public class HelloController {
     private String port;
 
     @GetMapping("hello")
-    public Object hello(){
-//        Stu stu = new Stu();
-//        stu.setAge(12);
-//        Stu stu1 = new Stu("123", 123, 123);
-//        Stu stu2 = new Stu();
-//
-//        log.info("info");
-//        log.debug("debug");
-//        log.warn("warn");
-//        log.error("error");
-        log.error("lb测试，当前端口号为：" + port);
+    public Object hello(HttpServletRequest request){
+        String userJson = request.getHeader(APP_USER_JSON); //controller 根据key来获得信息value
+        Users jwtUser = new Gson().fromJson(userJson, Users.class);
+        log.warn(jwtUser.toString()); //System.out.println(jwtUser);
 
         return "Hello, this is Bessie recruit";
     }

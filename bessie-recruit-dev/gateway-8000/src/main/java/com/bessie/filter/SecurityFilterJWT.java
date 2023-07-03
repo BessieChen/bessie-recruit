@@ -15,6 +15,7 @@ import org.springframework.core.Ordered;
 import org.springframework.core.io.buffer.DataBuffer;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.server.reactive.ServerHttpRequest;
 import org.springframework.http.server.reactive.ServerHttpResponse;
 import org.springframework.stereotype.Component;
 import org.springframework.util.AntPathMatcher;
@@ -80,14 +81,37 @@ public class SecurityFilterJWT extends BaseInfoProperties implements GlobalFilte
             String prefix = tokenArr[0];
             String jwt = tokenArr[1];
 
-            return dealJWT(jwt, exchange, chain);
+            // 判断并且处理用户信息. 处理的时候根据前缀传入header的key
+            if (prefix.equalsIgnoreCase(TOKEN_USER_PREFIX)) {
+                return dealJWT(jwt, exchange, chain, APP_USER_JSON); //最后一个参数是 key, 因为后序 controller 根据key来获得信息value
+            } else if (prefix.equalsIgnoreCase(TOKEN_SAAS_PREFIX)) {
+                return dealJWT(jwt, exchange, chain, SAAS_USER_JSON);
+            } else if (prefix.equalsIgnoreCase(TOKEN_ADMIN_PREFIX)) {
+                return dealJWT(jwt, exchange, chain, ADMIN_USER_JSON);
+            }
+
+            //return dealJWTDeprecated(jwt, exchange, chain);
         }
 
         // 默认不放行，没有token则返回错误，到达这里的都是漏掉的没有在ExcludeUrlPath中配置
         return renderErrorMsg(exchange, ResponseStatusEnum.UN_LOGIN);
     }
 
-    public Mono<Void> dealJWT(String jwt, ServerWebExchange exchange, GatewayFilterChain chain) {
+    public Mono<Void> dealJWT(String jwt, ServerWebExchange exchange, GatewayFilterChain chain, String key) {
+        try {
+            String userJson = jwtUtils.checkJWT(jwt);
+            ServerWebExchange serverWebExchange = setNewHeader(exchange, key, userJson);
+            return chain.filter(serverWebExchange);
+        } catch (ExpiredJwtException e) {
+            e.printStackTrace();
+            return renderErrorMsg(exchange, ResponseStatusEnum.JWT_EXPIRE_ERROR);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return renderErrorMsg(exchange, ResponseStatusEnum.JWT_SIGNATURE_ERROR);
+        }
+    }
+
+    public Mono<Void> dealJWTDeprecated(String jwt, ServerWebExchange exchange, GatewayFilterChain chain) {
         try {
             String userJson = jwtUtils.checkJWT(jwt);
             //checkJWT()若出现异常, 这个异常的拦截, 上节说了, 我们不能用全局的统一异常去处理的. 所以需要手动拦截 checkJWT()的异常
@@ -102,6 +126,19 @@ public class SecurityFilterJWT extends BaseInfoProperties implements GlobalFilte
             e.printStackTrace();
             return renderErrorMsg(exchange, ResponseStatusEnum.JWT_SIGNATURE_ERROR);
         }
+    }
+
+    public ServerWebExchange setNewHeader(ServerWebExchange exchange,
+                                          String headerKey,
+                                          String headerValue) {
+        // 重新构建新的request
+        ServerHttpRequest newRequest = exchange.getRequest()
+                .mutate()
+                .header(headerKey, headerValue)
+                .build();
+        // 替换原来的request
+        ServerWebExchange newExchange = exchange.mutate().request(newRequest).build();
+        return newExchange;
     }
 
     /**
