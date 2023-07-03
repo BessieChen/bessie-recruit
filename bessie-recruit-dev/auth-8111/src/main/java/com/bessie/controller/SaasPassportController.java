@@ -3,7 +3,10 @@ package com.bessie.controller;
 import com.bessie.base.BaseInfoProperties;
 import com.bessie.grace.result.GraceJsonResult;
 import com.bessie.grace.result.ResponseStatusEnum;
+import com.bessie.pojo.Users;
+import com.bessie.service.UsersService;
 import com.bessie.utils.JWTUtils;
+import com.google.gson.Gson;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +26,9 @@ public class SaasPassportController extends BaseInfoProperties {
 
     @Autowired
     private JWTUtils jwtUtils;
+
+    @Autowired
+    private UsersService usersService;
 
     /**
      * 1. 获得二维码token令牌
@@ -113,5 +119,29 @@ public class SaasPassportController extends BaseInfoProperties {
             list.add(0);
             return GraceJsonResult.ok(list);
         }
+    }
+
+    /**
+     * 4. 手机端点击确认登录，携带pre_token与后端判断，如果ok则登录成功
+     * 注：如果使用websocket或netty，可以再次直接通信H5进行页面的跳转
+     */
+    @PostMapping("goQRLogin")
+    public GraceJsonResult goQRLogin(String userId, String qrToken, String preToken) {
+        String preTokenRedisArr = redis.get(SAAS_PLATFORM_LOGIN_TOKEN_READ + ":" + qrToken);
+
+        if (StringUtils.isNotBlank(preTokenRedisArr)) {
+            String preTokenRedis = preTokenRedisArr.split(",")[1];
+            if (preTokenRedis.equalsIgnoreCase(preToken)) {
+                // 根据userId获得用户信息
+                Users saasUser = usersService.getById(userId);
+                if (saasUser == null) {
+                    return GraceJsonResult.errorCustom(ResponseStatusEnum.USER_NOT_EXIST_ERROR);
+                }
+
+                // 存入信息到redis，因为H5在未登录的情况下，拿不到用户id，所以暂存用户信息。如果使用websocket通信则无此问题。
+                redis.set(REDIS_SAAS_USER_INFO + ":temp:" + preToken, new Gson().toJson(saasUser), 5*60);
+            }
+        }
+        return GraceJsonResult.ok();
     }
 }

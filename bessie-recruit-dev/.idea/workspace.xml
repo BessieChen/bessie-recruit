@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b78f2aa9-8747-4e55-a2a8-4043cac91874" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/controller/SaasPassportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/controller/SaasPassportController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-8111/src/test/java/com/bessie/test/JWTTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-8111/src/test/java/com/bessie/test/JWTTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -66,11 +65,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/controller/SaasPassportController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="539">
-              <caret line="115" column="5" lean-forward="true" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
+            <state relative-caret-position="127">
+              <caret line="121" column="5" lean-forward="true" selection-start-line="121" selection-start-column="5" selection-end-line="121" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gateway-8000/src/main/resources/excludeUrlPath.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="9" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -270,8 +278,8 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="310" />
-    <option name="y" value="82" />
+    <option name="x" value="300" />
+    <option name="y" value="35" />
     <option name="width" value="1370" />
     <option name="height" value="958" />
   </component>
@@ -507,7 +515,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.auth-8111">
+  <component name="RunManager" selected="Application.gateway-8000">
     <configuration name="DesensitizationUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.bessie.utils.DesensitizationUtil" />
       <module name="recruit-common" />
@@ -689,7 +697,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="310" y="83" width="1370" height="958" extended-state="0" />
+    <frame x="300" y="35" width="1370" height="958" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8469101" visible="true" weight="0.2868976" />
@@ -701,7 +709,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.15308988" side_tool="true" weight="0.29620853" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" x="231" y="411" width="1218" height="227" id="Run" order="2" sideWeight="0.785772" visible="true" weight="0.22325581" />
+      <window_info active="true" anchor="bottom" x="231" y="411" width="1218" height="227" id="Run" order="2" sideWeight="0.785772" visible="true" weight="0.22325581" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.36627907" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -714,7 +722,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24932249" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info active="true" anchor="right" id="Maven" order="4" sideWeight="0.4934555" visible="true" weight="0.11370482" />
+      <window_info anchor="right" id="Maven" order="4" sideWeight="0.4934555" visible="true" weight="0.11370482" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
@@ -1041,13 +1049,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gateway-8000/src/main/resources/excludeUrlPath.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gateway-8000/src/main/java/com/bessie/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1161,10 +1162,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/gateway-8000/src/main/resources/excludeUrlPath.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="9" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/controller/SaasPassportController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="115" column="5" lean-forward="true" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
+        <state relative-caret-position="127">
+          <caret line="121" column="5" lean-forward="true" selection-start-line="121" selection-start-column="5" selection-end-line="121" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
