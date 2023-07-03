@@ -2,6 +2,7 @@ com/bessie/pojo/Job.class
 com/bessie/pojo/test/Stu.class
 com/bessie/pojo/Interview.class
 com/bessie/pojo/bo/RegistLoginBO.class
+com/bessie/pojo/vo/UsersVO.class
 com/bessie/pojo/ResumeWorkExp.class
 com/bessie/pojo/Article.class
 com/bessie/pojo/Company.class
