@@ -1,5 +1,7 @@
 package com.bessie.pojo;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
@@ -25,11 +27,13 @@ public class Admin implements Serializable {
     /**
      * 密码
      */
+    @JsonIgnore //org.fasterxml.jackson.annotation
     private String password;
 
     /**
      * 用户混合加密的盐
      */
+    @JsonIgnore
     private String slat;
 
     /**

@@ -35,5 +35,6 @@ com/bessie/enums/DelayTimes.class
 com/bessie/enums/MessageEnum.class
 com/bessie/exceptions/GraceExceptionHandler.class
 com/bessie/enums/MsgReveiverTypeEnum.class
+com/bessie/utils/MD5Utils.class
 com/bessie/utils/TencentCloudProperties.class
 com/bessie/enums/ActiveTime.class

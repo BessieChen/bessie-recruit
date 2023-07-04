@@ -20,3 +20,4 @@ com/bessie/pojo/Users.class
 com/bessie/pojo/JobType.class
 com/bessie/pojo/CompanyPhoto.class
 com/bessie/pojo/Industry.class
+com/bessie/pojo/bo/AdminBO.class
