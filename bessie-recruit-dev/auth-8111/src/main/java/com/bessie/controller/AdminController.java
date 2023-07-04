@@ -8,6 +8,7 @@ import com.bessie.pojo.Admin;
 import com.bessie.pojo.Users;
 import com.bessie.pojo.bo.AdminBO;
 import com.bessie.pojo.bo.RegistLoginBO;
+import com.bessie.pojo.vo.AdminVO;
 import com.bessie.pojo.vo.UsersVO;
 import com.bessie.service.AdminService;
 import com.bessie.service.UsersService;
@@ -60,5 +61,20 @@ public class AdminController extends BaseInfoProperties {
     @PostMapping("logout")
     public GraceJsonResult logout() {
         return GraceJsonResult.ok();
+    }
+
+    @GetMapping("info")
+    public GraceJsonResult info(String token) {
+
+        /**
+         * FIXME：
+         * 思考：此处重token中获得admin信息好不好？还是需要重新再查询一次数据库？群里交流
+         */
+        Admin admin = JWTCurrentUserInterceptor.adminUser.get();
+        System.out.println(admin);
+
+        AdminVO adminVO = new AdminVO();
+        BeanUtils.copyProperties(admin, adminVO);
+        return GraceJsonResult.ok(adminVO);
     }
 }
