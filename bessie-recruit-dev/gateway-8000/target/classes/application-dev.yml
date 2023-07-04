@@ -1,4 +1,9 @@
 spring:
+  redis: #redis的密码和其他密码不一样啊!!
+    host: 192.168.31.219
+    port: 6379
+    database: 0
+    password: "092121"
   cloud:
     nacos:
       discovery:
