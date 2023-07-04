@@ -4,12 +4,15 @@ import com.bessie.base.BaseInfoProperties;
 import com.bessie.grace.result.GraceJsonResult;
 import com.bessie.grace.result.ResponseStatusEnum;
 import com.bessie.pojo.Users;
+import com.bessie.pojo.vo.SaasUserVO;
 import com.bessie.service.UsersService;
 import com.bessie.utils.JWTUtils;
 import com.google.gson.Gson;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -142,6 +145,54 @@ public class SaasPassportController extends BaseInfoProperties {
                 redis.set(REDIS_SAAS_USER_INFO + ":temp:" + preToken, new Gson().toJson(saasUser), 5*60);
             }
         }
+        return GraceJsonResult.ok();
+    }
+
+    /**
+     * 5. SAAS端平台登录页面自动刷新
+     */
+    @PostMapping("checkLogin")
+    public GraceJsonResult checkLogin(String preToken) {
+
+        if (StringUtils.isBlank(preToken)) {
+            return GraceJsonResult.ok("");
+        }
+
+        // 获得临时用户信息
+        String userJson = redis.get(REDIS_SAAS_USER_INFO + ":temp:" + preToken);
+
+        if (StringUtils.isBlank(userJson)) {
+            return GraceJsonResult.errorCustom(ResponseStatusEnum.USER_NOT_EXIST_ERROR);
+        }
+
+        // 确认登录，saas用户的token重新生成，并且长期有效
+        String saasUserToken = jwtUtils.createJWTWithPrefix(userJson,
+//                                                            Long.valueOf(8 * 60 * 60 * 1000),       // 8小时
+                TOKEN_SAAS_PREFIX);
+        redis.set(REDIS_SAAS_USER_INFO + ":" + saasUserToken, userJson);
+        return GraceJsonResult.ok(saasUserToken);
+    }
+
+    /**
+     * 6. 获得用户基本信息并且展示
+     * @param token
+     * @return
+     */
+    @GetMapping("info")
+    public GraceJsonResult info(String token) {
+
+        String saasUserToken = token;
+
+        String userJson = redis.get(REDIS_SAAS_USER_INFO + ":" + saasUserToken);
+        Users saasUser = new Gson().fromJson(userJson,  Users.class);
+
+        SaasUserVO saasUserVO = new SaasUserVO();
+        BeanUtils.copyProperties(saasUser, saasUserVO);
+        return GraceJsonResult.ok(saasUserVO);
+    }
+
+    @PostMapping("logout")
+    public GraceJsonResult logout(String token) throws Exception {
         return GraceJsonResult.ok();
     }
 }
