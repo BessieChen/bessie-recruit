@@ -4,6 +4,7 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.retry.annotation.EnableRetry;
 
 
 /**
@@ -12,6 +13,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  * @author: Bessie
  * @create: 2023-06-21 16:45
  **/
+@EnableRetry
 @SpringBootApplication      //@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class })
 @EnableDiscoveryClient      // 开启服务注册与发现功能
 @MapperScan(basePackages = "com.bessie.mapper")
