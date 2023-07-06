@@ -7,12 +7,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="rabbit-producer" />
         <module name="recruit-common" />
         <module name="auth-8111" />
         <module name="recruit-pojo" />
         <module name="recruit-api" />
         <module name="service-company-6001" />
         <module name="service-user-7001" />
+        <module name="rabbit-consumer" />
         <module name="gateway-8000" />
       </profile>
     </annotationProcessing>
@@ -21,6 +23,8 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="auth-8111" options="-parameters" />
       <module name="gateway-8000" options="-parameters" />
+      <module name="rabbit-consumer" options="-parameters" />
+      <module name="rabbit-producer" options="-parameters" />
       <module name="recruit-api" options="-parameters" />
       <module name="recruit-common" options="-parameters" />
       <module name="recruit-pojo" options="-parameters" />

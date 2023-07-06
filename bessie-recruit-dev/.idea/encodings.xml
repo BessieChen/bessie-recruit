@@ -4,6 +4,8 @@
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/auth-8111" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gateway-8000" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rabbit-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rabbit-producer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/recruit-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/recruit-common" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/recruit-pojo" charset="UTF-8" />
