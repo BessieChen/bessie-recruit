@@ -3,7 +3,7 @@
 <mapper namespace="com.bessie.mapper.StuMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.bessie.pojo.Stu">
+    <resultMap id="BaseResultMap" type="com.bessie.pojo.ar.Stu">
         <id column="id" property="id" />
         <result column="name" property="name" />
         <result column="age" property="age" />

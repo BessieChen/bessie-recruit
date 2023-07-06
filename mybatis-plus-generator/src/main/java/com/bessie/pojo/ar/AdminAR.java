@@ -1,5 +1,6 @@
-package com.bessie.pojo;
+package com.bessie.pojo.ar;
 
+import com.baomidou.mybatisplus.extension.activerecord.Model;
 import java.time.LocalDateTime;
 import java.io.Serializable;
 
@@ -9,9 +10,9 @@ import java.io.Serializable;
  * </p>
  *
  * @author bessie
- * @since 2023-06-24
+ * @since 2023-07-06
  */
-public class Admin implements Serializable {
+public class AdminAR extends Model<AdminAR> {
 
     private static final long serialVersionUID = 1L;
 
@@ -109,6 +110,11 @@ public class Admin implements Serializable {
 
     public void setUpdatedTime(LocalDateTime updatedTime) {
         this.updatedTime = updatedTime;
+    }
+
+    @Override
+    protected Serializable pkVal() {
+        return this.id;
     }
 
     @Override

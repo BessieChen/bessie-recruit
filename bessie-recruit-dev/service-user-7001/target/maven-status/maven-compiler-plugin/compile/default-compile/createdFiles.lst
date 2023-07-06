@@ -1,5 +1,10 @@
 com/bessie/mapper/StuMapper.class
 com/bessie/controller/HelloController.class
+com/bessie/controller/AdminInfoController.class
+com/bessie/mapper/AdminMapper.class
 com/bessie/Application.class
 com/bessie/service/impl/StuServiceImpl.class
+com/bessie/mapper/AdminMapperAR.class
+com/bessie/service/AdminService.class
+com/bessie/service/impl/AdminServiceImpl.class
 com/bessie/service/StuService.class

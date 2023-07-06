@@ -1,6 +1,6 @@
 package com.bessie.service.impl;
 
-import com.bessie.pojo.Admin;
+import com.bessie.pojo.ar.AdminAR;
 import com.bessie.mapper.AdminMapper;
 import com.bessie.service.AdminService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -12,9 +12,9 @@ import org.springframework.stereotype.Service;
  * </p>
  *
  * @author bessie
- * @since 2023-06-24
+ * @since 2023-07-06
  */
 @Service
-public class AdminServiceImpl extends ServiceImpl<AdminMapper, Admin> implements AdminService {
+public class AdminServiceImpl extends ServiceImpl<AdminMapper, AdminAR> implements AdminService {
 
 }

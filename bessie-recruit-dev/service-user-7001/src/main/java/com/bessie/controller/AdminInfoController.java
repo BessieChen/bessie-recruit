@@ -3,6 +3,7 @@ package com.bessie.controller;
 import com.bessie.base.BaseInfoProperties;
 import com.bessie.grace.result.GraceJsonResult;
 import com.bessie.pojo.bo.CreateAdminBO;
+import com.bessie.pojo.bo.ResetPwdBO;
 import com.bessie.service.AdminService;
 import com.bessie.utils.PagedGridResult;
 import lombok.extern.slf4j.Slf4j;
@@ -55,4 +56,13 @@ public class AdminInfoController extends BaseInfoProperties {
         return GraceJsonResult.ok();
     }
 
+    @PostMapping("resetPwd")
+    public GraceJsonResult resetPwd(@RequestBody ResetPwdBO resetPwdBO) {
+
+        // resetPwdBO 校验
+        // adminService 重置密码
+
+        resetPwdBO.modifyPwd();
+        return GraceJsonResult.ok();
+    }
 }

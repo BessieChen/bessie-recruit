@@ -1,7 +1,7 @@
 package com.bessie.mapper;
 
-import com.bessie.pojo.ar.AdminAR;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.bessie.pojo.ar.AdminAR;
 
 /**
  * <p>
@@ -11,6 +11,6 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author bessie
  * @since 2023-07-06
  */
-public interface AdminMapper extends BaseMapper<AdminAR> {
+public interface AdminMapperAR extends BaseMapper<AdminAR> {
 
 }

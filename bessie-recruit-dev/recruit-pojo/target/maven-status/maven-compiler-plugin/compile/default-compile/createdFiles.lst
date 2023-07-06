@@ -2,6 +2,7 @@ com/bessie/pojo/test/Stu.class
 com/bessie/pojo/bo/RegistLoginBO.class
 com/bessie/pojo/ResumeWorkExp.class
 com/bessie/pojo/Article.class
+com/bessie/pojo/vo/SaasUserVO.class
 com/bessie/pojo/ResumeProjectExp.class
 com/bessie/pojo/DataDictionary.class
 com/bessie/pojo/ResumeEducation.class
@@ -12,13 +13,16 @@ com/bessie/pojo/JobType.class
 com/bessie/pojo/bo/AdminBO.class
 com/bessie/pojo/Job.class
 com/bessie/pojo/Interview.class
+com/bessie/pojo/bo/CreateAdminBO.class
 com/bessie/pojo/vo/UsersVO.class
 com/bessie/pojo/Company.class
 com/bessie/pojo/vo/AdminVO.class
 com/bessie/pojo/ChatMessage.class
 com/bessie/pojo/SysParams.class
 com/bessie/pojo/Admin.class
+com/bessie/pojo/ar/AdminAR.class
 com/bessie/pojo/Orders.class
 com/bessie/pojo/Stu.class
+com/bessie/pojo/bo/ResetPwdBO.class
 com/bessie/pojo/CompanyPhoto.class
 com/bessie/pojo/Industry.class

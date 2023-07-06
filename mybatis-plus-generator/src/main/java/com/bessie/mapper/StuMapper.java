@@ -1,6 +1,5 @@
 package com.bessie.mapper;
 
-import com.bessie.pojo.Stu;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
@@ -9,7 +8,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * </p>
  *
  * @author bessie
- * @since 2023-06-24
+ * @since 2023-07-06
  */
 public interface StuMapper extends BaseMapper<Stu> {
 
