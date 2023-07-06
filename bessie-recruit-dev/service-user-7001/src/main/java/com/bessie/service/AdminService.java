@@ -32,4 +32,10 @@ public interface AdminService {
                                         Integer page,
                                         Integer limit);
 
+    /**
+     * 删除admin
+     * @param username
+     */
+    public void deleteAdmin(String username);
+
 }

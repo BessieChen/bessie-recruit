@@ -75,6 +75,18 @@ public class AdminServiceImpl extends BaseInfoProperties implements AdminService
         return setterPagedGrid(adminList, page);
     }
 
+    @Transactional
+    @Override
+    public void deleteAdmin(String username) {
+        int res = adminMapper.delete(
+                new QueryWrapper<Admin>()
+                        .eq("username", username)
+                        .ne("username", "admin")
+        );
+
+        if (res == 0) GraceException.doException(ResponseStatusEnum.ADMIN_DELETE_ERROR);
+    }
+
     private Admin getSelfAdmin(String username) {
         Admin admin = adminMapper.selectOne(
                 new QueryWrapper<Admin>()

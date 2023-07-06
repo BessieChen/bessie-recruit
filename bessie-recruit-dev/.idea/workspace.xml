@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b78f2aa9-8747-4e55-a2a8-4043cac91874" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/recruit-common/src/main/java/com/bessie/utils/PagedGridResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-8000/target/gateway-8000.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-8000/target/gateway-8000.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recruit-common/src/main/java/com/bessie/base/BaseInfoProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/recruit-common/src/main/java/com/bessie/base/BaseInfoProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recruit-common/target/classes/com/bessie/base/BaseInfoProperties.class" beforeDir="false" afterPath="$PROJECT_DIR$/recruit-common/target/classes/com/bessie/base/BaseInfoProperties.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recruit-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/recruit-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recruit-common/target/recruit-common.jar" beforeDir="false" afterPath="$PROJECT_DIR$/recruit-common/target/recruit-common.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recruit-pojo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/recruit-pojo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recruit-pojo/target/recruit-pojo.jar" beforeDir="false" afterPath="$PROJECT_DIR$/recruit-pojo/target/recruit-pojo.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-user-7001/src/main/java/com/bessie/controller/AdminInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-user-7001/src/main/java/com/bessie/controller/AdminInfoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-user-7001/src/main/java/com/bessie/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-user-7001/src/main/java/com/bessie/service/AdminService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-user-7001/src/main/java/com/bessie/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-user-7001/src/main/java/com/bessie/service/impl/AdminServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-user-7001/target/classes/com/bessie/controller/AdminInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-user-7001/target/classes/com/bessie/controller/AdminInfoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-user-7001/target/classes/com/bessie/service/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-user-7001/target/classes/com/bessie/service/AdminService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-user-7001/target/classes/com/bessie/service/impl/AdminServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-user-7001/target/classes/com/bessie/service/impl/AdminServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-user-7001/target/service-user-7001.jar" beforeDir="false" afterPath="$PROJECT_DIR$/service-user-7001/target/service-user-7001.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -46,8 +33,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/service-user-7001/src/main/java/com/bessie/controller/AdminInfoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="42" column="37" lean-forward="true" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+            <state relative-caret-position="353">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,8 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/service-user-7001/src/main/java/com/bessie/service/AdminService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="525">
+              <caret line="38" column="45" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -67,8 +54,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/service-user-7001/src/main/java/com/bessie/service/impl/AdminServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="67" column="42" lean-forward="true" selection-start-line="67" selection-start-column="42" selection-end-line="67" selection-end-column="42" />
+            <state relative-caret-position="624">
+              <caret line="86" column="49" selection-start-line="86" selection-start-column="49" selection-end-line="86" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -179,8 +166,8 @@
         <option value="$PROJECT_DIR$/gateway-8000/src/main/resources/application-dev.yml" />
         <option value="$PROJECT_DIR$/recruit-common/src/main/java/com/bessie/utils/PagedGridResult.java" />
         <option value="$PROJECT_DIR$/recruit-common/src/main/java/com/bessie/base/BaseInfoProperties.java" />
-        <option value="$PROJECT_DIR$/service-user-7001/src/main/java/com/bessie/service/AdminService.java" />
         <option value="$PROJECT_DIR$/service-user-7001/src/main/java/com/bessie/service/impl/AdminServiceImpl.java" />
+        <option value="$PROJECT_DIR$/service-user-7001/src/main/java/com/bessie/service/AdminService.java" />
         <option value="$PROJECT_DIR$/service-user-7001/src/main/java/com/bessie/controller/AdminInfoController.java" />
       </list>
     </option>
@@ -1185,13 +1172,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service-user-7001/src/main/java/com/bessie/service/AdminService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/recruit-common/src/main/java/com/bessie/base/BaseInfoProperties.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="339">
@@ -1201,18 +1181,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/service-user-7001/src/main/java/com/bessie/service/impl/AdminServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="67" column="42" lean-forward="true" selection-start-line="67" selection-start-column="42" selection-end-line="67" selection-end-column="42" />
+        <state relative-caret-position="624">
+          <caret line="86" column="49" selection-start-line="86" selection-start-column="49" selection-end-line="86" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/service-user-7001/src/main/java/com/bessie/service/AdminService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="38" column="45" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/service-user-7001/src/main/java/com/bessie/controller/AdminInfoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="42" column="37" lean-forward="true" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+        <state relative-caret-position="353">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
