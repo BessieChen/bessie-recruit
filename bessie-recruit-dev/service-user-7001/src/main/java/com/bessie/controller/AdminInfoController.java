@@ -4,6 +4,7 @@ import com.bessie.base.BaseInfoProperties;
 import com.bessie.grace.result.GraceJsonResult;
 import com.bessie.pojo.bo.CreateAdminBO;
 import com.bessie.service.AdminService;
+import com.bessie.utils.PagedGridResult;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -31,6 +32,21 @@ public class AdminInfoController extends BaseInfoProperties {
     public GraceJsonResult create(@Valid @RequestBody CreateAdminBO createAdminBO) {
         adminService.createAdmin(createAdminBO);
         return GraceJsonResult.ok();
+    }
+
+    @PostMapping("list")
+    public GraceJsonResult list(String accountName,
+                                Integer page,
+                                Integer limit) {
+
+        if (page == null) page = 1;
+        if (limit == null) page = 10;
+
+        PagedGridResult listResult = adminService.getAdminList(accountName,
+                page,
+                limit);
+
+        return GraceJsonResult.ok(listResult);
     }
 
 }

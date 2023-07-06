@@ -2,6 +2,7 @@ package com.bessie.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.bessie.base.BaseInfoProperties;
 import com.bessie.exceptions.GraceException;
 import com.bessie.grace.result.ResponseStatusEnum;
 import com.bessie.mapper.AdminMapper;
@@ -10,12 +11,15 @@ import com.bessie.pojo.bo.AdminBO;
 import com.bessie.pojo.bo.CreateAdminBO;
 import com.bessie.service.AdminService;
 import com.bessie.utils.MD5Utils;
+import com.bessie.utils.PagedGridResult;
+import com.github.pagehelper.PageHelper;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 /**
  * <p>
@@ -26,7 +30,7 @@ import java.time.LocalDateTime;
  * @since 2023-06-27
  */
 @Service
-public class AdminServiceImpl extends ServiceImpl<AdminMapper, Admin> implements AdminService {
+public class AdminServiceImpl extends BaseInfoProperties implements AdminService {
 
     @Autowired
     private AdminMapper adminMapper;
@@ -54,6 +58,21 @@ public class AdminServiceImpl extends ServiceImpl<AdminMapper, Admin> implements
         newAdmin.setUpdatedTime(LocalDateTime.now());
 
         adminMapper.insert(newAdmin);
+    }
+
+    @Override
+    public PagedGridResult getAdminList(String accountName,
+                                        Integer page,
+                                        Integer limit) {
+
+        PageHelper.startPage(page, limit);
+
+        List<Admin> adminList = adminMapper.selectList(
+                new QueryWrapper<Admin>()
+                        .like("username", accountName)
+        );
+
+        return setterPagedGrid(adminList, page);
     }
 
     private Admin getSelfAdmin(String username) {

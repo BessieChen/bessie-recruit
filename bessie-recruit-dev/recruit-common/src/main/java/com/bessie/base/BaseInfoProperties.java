@@ -1,7 +1,15 @@
 package com.bessie.base;
 
+import com.bessie.utils.PagedGridResult;
 import com.bessie.utils.RedisOperator;
+import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.FieldError;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class BaseInfoProperties {
 
@@ -113,28 +121,28 @@ public class BaseInfoProperties {
 //    public static final String PAY_RETURN_URL = "http://api.t.mukewang.com/foodie-api/tradeOrder/notifyMerchantOrderPaid";        // prod
 
 
-//    public Map<String, String> getErrors(BindingResult result) {
-//        Map<String, String> map = new HashMap<>();
-//        List<FieldError> errorList = result.getFieldErrors();
-//        for (FieldError ff : errorList) {
-//            // 错误所对应的属性字段名
-//            String field = ff.getField();
-//            // 错误的信息
-//            String msg = ff.getDefaultMessage();
-//            map.put(field, msg);
-//        }
-//        return map;
-//    }
+    public Map<String, String> getErrors(BindingResult result) {
+        Map<String, String> map = new HashMap<>();
+        List<FieldError> errorList = result.getFieldErrors();
+        for (FieldError ff : errorList) {
+            // 错误所对应的属性字段名
+            String field = ff.getField();
+            // 错误的信息
+            String msg = ff.getDefaultMessage();
+            map.put(field, msg);
+        }
+        return map;
+    }
 
-//    public PagedGridResult setterPagedGrid(List<?> list,
-//                                           Integer page) {
-//        PageInfo<?> pageList = new PageInfo<>(list);
-//        PagedGridResult gridResult = new PagedGridResult();
-//        gridResult.setRows(list);
-//        gridResult.setPage(page);
-//        gridResult.setRecords(pageList.getTotal());
-//        gridResult.setTotal(pageList.getPages());
-//        return gridResult;
-//    }
+    public PagedGridResult setterPagedGrid(List<?> list,
+                                           Integer page) {
+        PageInfo<?> pageList = new PageInfo<>(list);
+        PagedGridResult gridResult = new PagedGridResult();
+        gridResult.setRows(list);
+        gridResult.setPage(page);
+        gridResult.setRecords(pageList.getTotal());
+        gridResult.setTotal(pageList.getPages());
+        return gridResult;
+    }
 
 }

@@ -15,6 +15,7 @@ com/bessie/utils/JWTUtils.class
 com/bessie/utils/LocalDateUtils.class
 com/bessie/enums/ResponseStatusEnum.class
 com/bessie/enums/PayMethod.class
+com/bessie/utils/PagedGridResult.class
 com/bessie/enums/EduEnum.class
 com/bessie/enums/MsgTypeEnum.class
 com/bessie/enums/ShowWhichName.class
