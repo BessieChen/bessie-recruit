@@ -12,10 +12,7 @@ import com.rabbitmq.client.*;
 import java.io.IOException;
 
 /**
- * 构建生产者，发送消息
- */
-/**
- * 构建消费者，监听消息
+ * 构建简单模式的消费者，监听消费消息
  */
 public class FooConsumer {
 

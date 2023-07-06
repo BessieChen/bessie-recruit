@@ -12,7 +12,7 @@ import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
 
 /**
- * 构建生产者，发送消息
+ * 构建工作队列的生产者，发送消息
  */
 public class WorkQueueProducer {
 

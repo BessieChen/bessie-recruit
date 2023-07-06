@@ -12,9 +12,13 @@ import com.rabbitmq.client.*;
 import java.io.IOException;
 
 /**
- * 构建发布订阅模式的消费者，监听消费消息
+ * 构建生产者，发送消息
  */
-public class PubSubConsumerB {
+
+/**
+ * 构建消费者，监听消息
+ */
+public class RoutingPayConsumerB {
 
     public static void main(String[] args) throws Exception {
 
@@ -33,8 +37,8 @@ public class PubSubConsumerB {
         Channel channel = connection.createChannel();
 
         // 4. 创建队列Queue（简单模式不需要交换机Exchange）
-        String fanout_queue_b = "fanout_queue_b";
-        channel.queueDeclare(fanout_queue_b, true, false, false, null);
+        String routing_queue_pay = "routing_queue_pay";
+        channel.queueDeclare(routing_queue_pay, true, false, false, null);
 
 
         Consumer consumer = new DefaultConsumer(channel){
@@ -59,7 +63,7 @@ public class PubSubConsumerB {
          * autoAck: 是否自动确认，true：告知mq消费者已经消费的确认通知
          * callback: 回调函数，处理监听到的消息
          */
-        channel.basicConsume(fanout_queue_b, true, consumer);
+        channel.basicConsume(routing_queue_pay, true, consumer);
 
         // 不需要关闭连接，则持续监听
 
