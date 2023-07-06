@@ -1,5 +1,6 @@
 package com.bessie.controller;
 
+import com.bessie.api.task.SMSTask;
 import com.bessie.base.BaseInfoProperties;
 import com.bessie.grace.result.GraceJsonResult;
 import com.bessie.grace.result.ResponseStatusEnum;
@@ -41,6 +42,9 @@ public class PassportController extends BaseInfoProperties {
     @Autowired
     private JWTUtils jwtUtils;
 
+    @Autowired
+    private SMSTask smsTask;
+
     @PostMapping("getSMSCode")
     public GraceJsonResult getSMSCode(String mobile, //@RequestParam String mobile,
                                       HttpServletRequest request) throws Exception {
@@ -56,6 +60,8 @@ public class PassportController extends BaseInfoProperties {
 
         String code = (int)((Math.random() * 9 + 1) * 100000) + "";
         //smsUtils.sendSMS(mobile, code); //我们之前发成功了一次, 现在就不必再发了, 否则腾讯云把你禁了
+
+        //smsTask.sendSMSTask(); //RetryComponent
         log.error("验证码为: {}", code);
 
         redis.set(MOBILE_SMSCODE + ":" + mobile, code, 30 * 60);
