@@ -1,3 +1,4 @@
 com/bessie/api/intercept/JWTCurrentUserInterceptor.class
 com/bessie/api/intercept/SMSInterceptor.class
+com/bessie/api/ServiceLogAspect.class
 com/bessie/api/InterceptorConfig.class

@@ -17,7 +17,7 @@ spring:
 # 打印日志的级别
 logging:
   level:
-    root: warn
+    root: info
 
 
 mybatis-plus:

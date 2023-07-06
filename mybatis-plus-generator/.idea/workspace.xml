@@ -1,39 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b7138c5b-7254-4346-9c00-8028b308a9ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-pojo/src/main/java/com/bessie/pojo/ar/AdminAR.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-pojo/src/main/java/com/bessie/pojo/bo/ResetPwdBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/src/main/java/com/bessie/mapper/AdminMapperAR.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/auth-8111/target/auth-8111.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/auth-8111/target/auth-8111.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/gateway-8000/target/gateway-8000.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/gateway-8000/target/gateway-8000.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/gateway-8000/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/gateway-8000/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-api/target/recruit-api.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-api/target/recruit-api.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-common/target/recruit-common.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-common/target/recruit-common.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-pojo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-pojo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-pojo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-pojo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-pojo/target/recruit-pojo.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-pojo/target/recruit-pojo.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/service-company-6001/target/service-user-6001.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/service-company-6001/target/service-user-6001.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/src/main/java/com/bessie/controller/AdminInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/src/main/java/com/bessie/controller/AdminInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/target/classes/com/bessie/controller/AdminInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/target/classes/com/bessie/controller/AdminInfoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/target/service-user-7001.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/target/service-user-7001.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bessie/config/MPDBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bessie/config/MPDBConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bessie/mapper/AdminMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bessie/mapper/AdminMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bessie/mapper/StuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bessie/mapper/StuMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bessie/mapper/xml/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bessie/mapper/xml/AdminMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bessie/mapper/xml/StuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bessie/mapper/xml/StuMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bessie/pojo/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bessie/pojo/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bessie/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bessie/service/AdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bessie/service/StuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bessie/service/StuService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bessie/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bessie/service/impl/AdminServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bessie/service/impl/StuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bessie/service/impl/StuServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bessie/config/MPDBConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bessie/config/MPDBConfig.class" afterDir="false" />
-    </list>
+    <list default="true" id="b7138c5b-7254-4346-9c00-8028b308a9ea" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -71,8 +39,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bessie/pojo/ar/AdminAR.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="240">
+              <caret line="28" column="28" lean-forward="true" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -250,10 +218,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="302" y="101" width="1141" height="747" extended-state="0" />
+    <frame x="302" y="100" width="1141" height="747" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3166515" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3166515" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -268,7 +236,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="8" side_tool="true" visible="true" weight="0.32973805" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32819724" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -309,8 +277,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bessie/pojo/ar/AdminAR.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="240">
+          <caret line="28" column="28" lean-forward="true" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
         </state>
       </provider>
     </entry>
