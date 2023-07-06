@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b78f2aa9-8747-4e55-a2a8-4043cac91874" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/rabbit-producer/src/main/java/com/bessie/mq/FooProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbit-consumer/src/main/java/com/bessie/mq/FooConsumer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -92,28 +89,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rabbit-producer/pom.xml">
+        <entry file="file://$PROJECT_DIR$/rabbit-producer/src/main/java/com/bessie/mq/FooProducer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rabbit-consumer/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="390">
+              <caret line="26" column="37" selection-start-line="21" selection-start-column="8" selection-end-line="26" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/rabbit-producer/src/main/java/com/bessie/mq/FooProducer.java">
+        <entry file="file://$PROJECT_DIR$/rabbit-consumer/src/main/java/com/bessie/mq/FooConsumer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="51" column="34" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
+            <state relative-caret-position="576">
+              <caret line="44" column="11" lean-forward="true" selection-start-line="44" selection-start-column="11" selection-end-line="44" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -187,7 +178,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/recruit-api/src/main/java/com/bessie/api/InterceptorConfig.java" />
         <option value="$PROJECT_DIR$/service-user-7001/src/main/java/com/bessie/controller/HelloController.java" />
         <option value="$PROJECT_DIR$/recruit-api/src/main/resources/bootstrap.yml" />
         <option value="$PROJECT_DIR$/gateway-8000/src/main/resources/bootstrap.yml" />
@@ -238,6 +228,7 @@
         <option value="$PROJECT_DIR$/rabbit-producer/pom.xml" />
         <option value="$PROJECT_DIR$/rabbit-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/rabbit-producer/src/main/java/com/bessie/mq/FooProducer.java" />
+        <option value="$PROJECT_DIR$/rabbit-consumer/src/main/java/com/bessie/mq/FooConsumer.java" />
       </list>
     </option>
   </component>
@@ -307,6 +298,51 @@
             <path>
               <item name="bessie-recruit-dev" type="b2602c69:ProjectViewProjectNode" />
               <item name="bessie-recruit-dev" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbit-consumer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bessie-recruit-dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bessie-recruit-dev" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbit-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bessie-recruit-dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bessie-recruit-dev" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbit-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bessie-recruit-dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bessie-recruit-dev" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbit-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bessie-recruit-dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bessie-recruit-dev" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbit-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mq" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bessie-recruit-dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bessie-recruit-dev" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbit-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mq" type="462c0819:PsiDirectoryNode" />
+              <item name="FooConsumer" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="bessie-recruit-dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bessie-recruit-dev" type="462c0819:PsiDirectoryNode" />
               <item name="rabbit-producer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -356,11 +392,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bessie.mq" />
       <recent name="com.bessie.test" />
       <recent name="com.bessie.mapper" />
       <recent name="com.bessie.pojo.bo" />
       <recent name="com.bessie.pojo.ar" />
-      <recent name="com.bessie.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/recruit-api/src/main/java/com/bessie/api/task" />
@@ -382,7 +418,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.FooProducer">
+  <component name="RunManager" selected="Application.FooConsumer">
+    <configuration name="FooConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bessie.mq.FooConsumer" />
+      <module name="rabbit-consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bessie.mq.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FooProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.bessie.mq.FooProducer" />
       <module name="rabbit-producer" />
@@ -476,22 +525,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JWTTest.checkJWT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="auth-8111" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.bessie.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.bessie.test" />
-      <option name="MAIN_CLASS_NAME" value="com.bessie.test.JWTTest" />
-      <option name="METHOD_NAME" value="checkJWT" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SpringRetryTest.retry (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="auth-8111" />
       <extension name="coverage">
@@ -547,19 +580,19 @@
       <item itemvalue="Application.service-company-6001" />
       <item itemvalue="Application.gateway-8000" />
       <item itemvalue="Application.auth-8111" />
-      <item itemvalue="JUnit.JWTTest.checkJWT" />
       <item itemvalue="JUnit.SpringRetryTest.retry" />
       <item itemvalue="JUnit.SpringRetryTest.retry (1)" />
       <item itemvalue="JUnit.SpringRetryTest.sendWithTask" />
       <item itemvalue="Application.FooProducer" />
+      <item itemvalue="Application.FooConsumer" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FooConsumer" />
         <item itemvalue="Application.FooProducer" />
         <item itemvalue="JUnit.SpringRetryTest.sendWithTask" />
         <item itemvalue="JUnit.SpringRetryTest.retry (1)" />
         <item itemvalue="JUnit.SpringRetryTest.retry" />
-        <item itemvalue="JUnit.JWTTest.checkJWT" />
       </list>
     </recent_temporary>
   </component>
@@ -610,6 +643,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="112" y="25" width="1500" height="1020" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8469101" visible="true" weight="0.2654321" />
       <window_info id="Structure" order="1" sideWeight="0.5010799" side_tool="true" weight="0.24958949" />
@@ -700,16 +734,6 @@
     </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gateway-8000/src/main/java/com/bessie/filter/SecurityFilterJWT.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
-          <caret line="87" column="23" selection-start-line="87" selection-start-column="23" selection-end-line="87" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.3.22/spring-aop-5.3.22.jar!/org/springframework/aop/framework/CglibAopProxy.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -1082,8 +1106,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rabbit-producer/src/main/java/com/bessie/mq/FooProducer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="51" column="34" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
+        <state relative-caret-position="390">
+          <caret line="26" column="37" selection-start-line="21" selection-start-column="8" selection-end-line="26" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbit-consumer/src/main/java/com/bessie/mq/FooConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="44" column="11" lean-forward="true" selection-start-line="44" selection-start-column="11" selection-end-line="44" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
