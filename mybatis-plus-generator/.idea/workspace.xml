@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7138c5b-7254-4346-9c00-8028b308a9ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-pojo/src/main/java/com/bessie/pojo/vo/AdminVO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/auth-8111/src/main/java/com/bessie/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/auth-8111/src/main/java/com/bessie/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/auth-8111/target/auth-8111.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/auth-8111/target/auth-8111.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/auth-8111/target/classes/com/bessie/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/auth-8111/target/classes/com/bessie/controller/AdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/gateway-8000/target/gateway-8000.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/gateway-8000/target/gateway-8000.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-common/target/recruit-common.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-common/target/recruit-common.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-pojo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-pojo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-pojo/target/recruit-pojo.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-pojo/target/recruit-pojo.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -197,7 +187,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1006" y="468" width="1141" height="747" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.311192" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />

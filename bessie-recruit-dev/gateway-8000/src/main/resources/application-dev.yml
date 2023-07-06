@@ -18,7 +18,7 @@ spring:
         - id: userRoute
           uri: lb://user-service
           predicates:
-            - Path=/u/**
+            - Path=/u/**,/admininfo/**
         - id: companyRoute
           uri: lb://company-service
           predicates:

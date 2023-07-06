@@ -65,11 +65,6 @@ public class AdminController extends BaseInfoProperties {
 
     @GetMapping("info")
     public GraceJsonResult info(String token) {
-
-        /**
-         * FIXME：
-         * 思考：此处重token中获得admin信息好不好？还是需要重新再查询一次数据库？群里交流
-         */
         Admin admin = JWTCurrentUserInterceptor.adminUser.get();
         System.out.println(admin);
 
