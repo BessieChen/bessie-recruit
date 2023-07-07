@@ -17,6 +17,7 @@ import com.bessie.utils.SMSUtils;
 import com.google.gson.Gson;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.amqp.rabbit.connection.CorrelationData;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +25,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
+import java.util.UUID;
 
 
 /**
@@ -76,11 +78,42 @@ public class PassportController extends BaseInfoProperties {
         contentQO.setMobile(mobile);
         contentQO.setContent(code);
 
+        // 定义confirm回调
+        rabbitTemplate.setConfirmCallback(new RabbitTemplate.ConfirmCallback() {
+            /**
+             * 回调函数
+             * @param correlationData 相关性数据
+             * @param ack 交换机是否成功接收到消息，true：成功
+             * @param cause 失败的原因
+             */
+            @Override
+            public void confirm(CorrelationData correlationData,
+                                boolean ack,
+                                String cause) {
+                log.info("进入confirm");
+                log.info("correlationData：{}", correlationData.getId());
+                if (ack) {
+                    log.info("交换机成功接收到消息~~ {}", cause);
+                } else {
+                    log.info("交换机接收消息失败~~失败原因： {}", cause);
+                }
+            }
+        });
+
         // 把短信内容和手机号构建为一个bean并且转换为json作为消息发送给mq
+        // 成功的
         rabbitTemplate.convertAndSend(
                 RabbitMQSMSConfig.SMS_EXCHANGE,
                 RabbitMQSMSConfig.ROUTING_KEY_SMS_SEND_LOGIN,
-                GsonUtils.object2String(contentQO));
+                GsonUtils.object2String(contentQO),
+                new CorrelationData(UUID.randomUUID().toString()));
+
+        //失败的: 错误的交换机
+        rabbitTemplate.convertAndSend(
+                RabbitMQSMSConfig.SMS_EXCHANGE + 123,
+                RabbitMQSMSConfig.ROUTING_KEY_SMS_SEND_LOGIN,
+                GsonUtils.object2String(contentQO),
+                new CorrelationData(UUID.randomUUID().toString()));
 
         redis.set(MOBILE_SMSCODE + ":" + mobile, code, 30 * 60);
 
