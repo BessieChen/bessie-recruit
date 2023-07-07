@@ -24,7 +24,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
-import java.util.UUID;
+
 
 /**
  * @program: bessie-recruit-dev
@@ -79,7 +79,7 @@ public class PassportController extends BaseInfoProperties {
         // 把短信内容和手机号构建为一个bean并且转换为json作为消息发送给mq
         rabbitTemplate.convertAndSend(
                 RabbitMQSMSConfig.SMS_EXCHANGE,
-                "bessie.sms.login.send",
+                RabbitMQSMSConfig.ROUTING_KEY_SMS_SEND_LOGIN,
                 GsonUtils.object2String(contentQO));
 
         redis.set(MOBILE_SMSCODE + ":" + mobile, code, 30 * 60);

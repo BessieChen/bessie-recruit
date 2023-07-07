@@ -23,7 +23,7 @@ public class RabbitMQSMSConfig {
     public static final String SMS_QUEUE = "sms_queue";
 
     // 统一定义路由key
-    public static final String ROUTING_KEY_SMS_SEND_LOGIN = "imooc.sms.send.login";
+    public static final String ROUTING_KEY_SMS_SEND_LOGIN = "bessie.sms.send.login";
 
     // 创建交换机
     @Bean(SMS_EXCHANGE)

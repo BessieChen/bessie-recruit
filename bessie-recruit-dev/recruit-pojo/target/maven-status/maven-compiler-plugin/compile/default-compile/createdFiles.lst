@@ -1,6 +1,7 @@
 com/bessie/pojo/test/Stu.class
 com/bessie/pojo/bo/RegistLoginBO.class
 com/bessie/pojo/ResumeWorkExp.class
+com/bessie/pojo/mq/SMSContentQO.class
 com/bessie/pojo/Article.class
 com/bessie/pojo/vo/SaasUserVO.class
 com/bessie/pojo/ResumeProjectExp.class

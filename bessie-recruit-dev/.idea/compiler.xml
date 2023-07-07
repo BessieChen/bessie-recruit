@@ -15,6 +15,7 @@
         <module name="service-company-6001" />
         <module name="service-user-7001" />
         <module name="rabbit-consumer" />
+        <module name="service-resource-4001" />
         <module name="gateway-8000" />
       </profile>
     </annotationProcessing>
@@ -29,6 +30,7 @@
       <module name="recruit-common" options="-parameters" />
       <module name="recruit-pojo" options="-parameters" />
       <module name="service-company-6001" options="-parameters" />
+      <module name="service-resource-4001" options="-parameters" />
       <module name="service-user-7001" options="-parameters" />
     </option>
   </component>

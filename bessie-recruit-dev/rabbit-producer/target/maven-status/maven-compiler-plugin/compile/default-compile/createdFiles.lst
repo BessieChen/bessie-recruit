@@ -1,0 +1,5 @@
+com/bessie/mq/TopicsProducer.class
+com/bessie/mq/PubSubProducer.class
+com/bessie/mq/WorkQueueProducer.class
+com/bessie/mq/FooProducer.class
+com/bessie/mq/RoutingProducer.class
