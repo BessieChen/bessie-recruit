@@ -1,19 +1,23 @@
 package com.bessie.controller;
 
+import com.bessie.api.mq.RabbitMQSMSConfig;
 import com.bessie.api.task.SMSTask;
 import com.bessie.base.BaseInfoProperties;
 import com.bessie.grace.result.GraceJsonResult;
 import com.bessie.grace.result.ResponseStatusEnum;
 import com.bessie.pojo.Users;
 import com.bessie.pojo.bo.RegistLoginBO;
+import com.bessie.pojo.mq.SMSContentQO;
 import com.bessie.pojo.vo.UsersVO;
 import com.bessie.service.UsersService;
+import com.bessie.utils.GsonUtils;
 import com.bessie.utils.IPUtil;
 import com.bessie.utils.JWTUtils;
 import com.bessie.utils.SMSUtils;
 import com.google.gson.Gson;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -45,6 +49,9 @@ public class PassportController extends BaseInfoProperties {
     @Autowired
     private SMSTask smsTask;
 
+    @Autowired
+    private RabbitTemplate rabbitTemplate;
+
     @PostMapping("getSMSCode")
     public GraceJsonResult getSMSCode(String mobile, //@RequestParam String mobile,
                                       HttpServletRequest request) throws Exception {
@@ -62,7 +69,18 @@ public class PassportController extends BaseInfoProperties {
         //smsUtils.sendSMS(mobile, code); //我们之前发成功了一次, 现在就不必再发了, 否则腾讯云把你禁了
 
         //smsTask.sendSMSTask(); //RetryComponent
-        log.error("验证码为: {}", code);
+        log.info("验证码为: {}", code);
+
+        // 使用消息队列异步解耦发送短信
+        SMSContentQO contentQO = new SMSContentQO();
+        contentQO.setMobile(mobile);
+        contentQO.setContent(code);
+
+        // 把短信内容和手机号构建为一个bean并且转换为json作为消息发送给mq
+        rabbitTemplate.convertAndSend(
+                RabbitMQSMSConfig.SMS_EXCHANGE,
+                "bessie.sms.login.send",
+                GsonUtils.object2String(contentQO));
 
         redis.set(MOBILE_SMSCODE + ":" + mobile, code, 30 * 60);
 
