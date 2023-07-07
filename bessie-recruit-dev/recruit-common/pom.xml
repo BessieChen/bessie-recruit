@@ -83,11 +83,17 @@
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
 
-
         <!-- 引入 spring boot test 依赖 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
+        </dependency>
+
+        <!-- jasypt 加解密 -->
+        <dependency>
+            <groupId>com.github.ulisesbocchio</groupId>
+            <artifactId>jasypt-spring-boot-starter</artifactId>
+            <version>2.1.2</version>
         </dependency>
 
         <!-- 引入 JJWT 依赖 -->
