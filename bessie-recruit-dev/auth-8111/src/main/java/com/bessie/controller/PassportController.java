@@ -17,6 +17,7 @@ import com.bessie.utils.SMSUtils;
 import com.google.gson.Gson;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.amqp.core.ReturnedMessage;
 import org.springframework.amqp.rabbit.connection.CorrelationData;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.BeanUtils;
@@ -100,18 +101,21 @@ public class PassportController extends BaseInfoProperties {
             }
         });
 
-        // 把短信内容和手机号构建为一个bean并且转换为json作为消息发送给mq
-        // 成功的
-        rabbitTemplate.convertAndSend(
-                RabbitMQSMSConfig.SMS_EXCHANGE,
-                RabbitMQSMSConfig.ROUTING_KEY_SMS_SEND_LOGIN,
-                GsonUtils.object2String(contentQO),
-                new CorrelationData(UUID.randomUUID().toString()));
+        // 定义return回调
+        rabbitTemplate.setReturnsCallback(new RabbitTemplate.ReturnsCallback() {
+            @Override
+            public void returnedMessage(ReturnedMessage returned) {
+                log.info("进入return");
+                log.info(returned.toString());
+            }
+        });
 
-        //失败的: 错误的交换机
+        // 把短信内容和手机号构建为一个bean并且转换为json作为消息发送给mq
         rabbitTemplate.convertAndSend(
-                RabbitMQSMSConfig.SMS_EXCHANGE + 123,
-                RabbitMQSMSConfig.ROUTING_KEY_SMS_SEND_LOGIN,
+                RabbitMQSMSConfig.SMS_EXCHANGE,                             //正确的交换机
+//                RabbitMQSMSConfig.SMS_EXCHANGE + "123",                   //错误的交换机
+                RabbitMQSMSConfig.ROUTING_KEY_SMS_SEND_LOGIN,               //正确的路由
+//                "abc.123" + RabbitMQSMSConfig.ROUTING_KEY_SMS_SEND_LOGIN, //错误的路由
                 GsonUtils.object2String(contentQO),
                 new CorrelationData(UUID.randomUUID().toString()));
 
