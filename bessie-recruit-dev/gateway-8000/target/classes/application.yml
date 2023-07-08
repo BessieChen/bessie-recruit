@@ -15,7 +15,7 @@ spring:
 # 打印日志的级别
 logging:
   level:
-    root: info
+    root: warn
 
 blackIP:
   continueCounts: ${counts:3}     # ip连续请求的次数
