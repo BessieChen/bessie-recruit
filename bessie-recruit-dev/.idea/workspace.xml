@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b78f2aa9-8747-4e55-a2a8-4043cac91874" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/controller/PassportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/controller/PassportController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recruit-api/src/main/java/com/bessie/api/mq/RabbitMQSMSConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/recruit-api/src/main/java/com/bessie/api/mq/RabbitMQSMSConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-resource-4001/src/main/java/com/bessie/mq/RabbitMQSMSConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-resource-4001/src/main/java/com/bessie/mq/RabbitMQSMSConsumer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -41,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/controller/PassportController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="106" column="67" lean-forward="true" selection-start-line="106" selection-start-column="67" selection-end-line="106" selection-end-column="67" />
+            <state relative-caret-position="294">
+              <caret line="133" column="13" lean-forward="true" selection-start-line="133" selection-start-column="13" selection-end-line="133" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/recruit-api/src/main/java/com/bessie/api/mq/RabbitMQSMSConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="25" column="84" lean-forward="true" selection-start-line="25" selection-start-column="84" selection-end-line="25" selection-end-column="84" />
+            <state relative-caret-position="407">
+              <caret line="42" column="31" lean-forward="true" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -224,11 +224,11 @@
         <option value="$PROJECT_DIR$/service-resource-4001/src/test/java/com/bessie/test/JasyptTest.java" />
         <option value="$PROJECT_DIR$/auth-8111/src/main/resources/application-dev.yml" />
         <option value="$PROJECT_DIR$/gateway-8000/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/controller/PassportController.java" />
         <option value="$PROJECT_DIR$/service-resource-4001/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/service-resource-4001/src/main/resources/application-dev.yml" />
-        <option value="$PROJECT_DIR$/recruit-api/src/main/java/com/bessie/api/mq/RabbitMQSMSConfig.java" />
         <option value="$PROJECT_DIR$/service-resource-4001/src/main/java/com/bessie/mq/RabbitMQSMSConsumer.java" />
+        <option value="$PROJECT_DIR$/recruit-api/src/main/java/com/bessie/api/mq/RabbitMQSMSConfig.java" />
+        <option value="$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/controller/PassportController.java" />
       </list>
     </option>
   </component>
@@ -339,7 +339,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.gateway-8000">
+  <component name="RunManager" selected="Application.auth-8111">
     <configuration name="TopicsOrderConsumerA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.bessie.mq.TopicsOrderConsumerA" />
       <module name="rabbit-consumer" />
@@ -561,6 +561,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="112" y="25" width="1568" height="1020" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8469101" visible="true" weight="0.2536042" />
       <window_info id="Structure" order="1" sideWeight="0.5010799" side_tool="true" weight="0.24958949" />
@@ -1006,6 +1007,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/recruit-api/src/main/java/com/bessie/api/mq/RabbitMQSMSConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="42" column="31" lean-forward="true" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/service-resource-4001/src/main/java/com/bessie/mq/RabbitMQSMSConsumer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
@@ -1018,18 +1029,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/controller/PassportController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="106" column="67" lean-forward="true" selection-start-line="106" selection-start-column="67" selection-end-line="106" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recruit-api/src/main/java/com/bessie/api/mq/RabbitMQSMSConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="25" column="84" lean-forward="true" selection-start-line="25" selection-start-column="84" selection-end-line="25" selection-end-column="84" />
+        <state relative-caret-position="294">
+          <caret line="133" column="13" lean-forward="true" selection-start-line="133" selection-start-column="13" selection-end-line="133" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

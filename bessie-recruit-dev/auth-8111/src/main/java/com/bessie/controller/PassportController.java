@@ -17,6 +17,9 @@ import com.bessie.utils.SMSUtils;
 import com.google.gson.Gson;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.amqp.AmqpException;
+import org.springframework.amqp.core.Message;
+import org.springframework.amqp.core.MessagePostProcessor;
 import org.springframework.amqp.core.ReturnedMessage;
 import org.springframework.amqp.rabbit.connection.CorrelationData;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
@@ -110,16 +113,39 @@ public class PassportController extends BaseInfoProperties {
             }
         });
 
+//        for(int i = 0 ; i < 10; ++i){
+//            // 把短信内容和手机号构建为一个bean并且转换为json作为消息发送给mq
+//            rabbitTemplate.convertAndSend(
+//                    RabbitMQSMSConfig.SMS_EXCHANGE,                             //正确的交换机
+////                RabbitMQSMSConfig.SMS_EXCHANGE + "123",                   //错误的交换机
+//                    RabbitMQSMSConfig.ROUTING_KEY_SMS_SEND_LOGIN,               //正确的路由
+////                "abc.123" + RabbitMQSMSConfig.ROUTING_KEY_SMS_SEND_LOGIN, //错误的路由
+//                    GsonUtils.object2String(contentQO),
+//                    new CorrelationData(UUID.randomUUID().toString()));
+//        }
+
+        // 消息属性处理的类对象（对当前需要的超时ttl进行参数属性的设置）
+        MessagePostProcessor processor = new MessagePostProcessor() {
+            @Override
+            public Message postProcessMessage(Message message) throws AmqpException {
+                message.getMessageProperties()
+                        .setExpiration(String.valueOf(10*1000));
+                return message;
+            }
+        };
         for(int i = 0 ; i < 10; ++i){
-            // 把短信内容和手机号构建为一个bean并且转换为json作为消息发送给mq
-            rabbitTemplate.convertAndSend(
-                    RabbitMQSMSConfig.SMS_EXCHANGE,                             //正确的交换机
-//                RabbitMQSMSConfig.SMS_EXCHANGE + "123",                   //错误的交换机
-                    RabbitMQSMSConfig.ROUTING_KEY_SMS_SEND_LOGIN,               //正确的路由
-//                "abc.123" + RabbitMQSMSConfig.ROUTING_KEY_SMS_SEND_LOGIN, //错误的路由
+            rabbitTemplate.convertAndSend(RabbitMQSMSConfig.SMS_EXCHANGE,
+                    RabbitMQSMSConfig.ROUTING_KEY_SMS_SEND_LOGIN,
                     GsonUtils.object2String(contentQO),
+                    message -> {
+                        message.getMessageProperties()
+                                .setExpiration(String.valueOf(30*1000));
+                        return message;
+                    },
                     new CorrelationData(UUID.randomUUID().toString()));
         }
+
+
 
         redis.set(MOBILE_SMSCODE + ":" + mobile, code, 30 * 60);
 
