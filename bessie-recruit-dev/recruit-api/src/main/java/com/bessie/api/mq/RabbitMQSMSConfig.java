@@ -39,7 +39,12 @@ public class RabbitMQSMSConfig {
     public Queue queue() {
         //return new Queue(SMS_QUEUE);                  //方法1
         return QueueBuilder.durable(SMS_QUEUE)
-//                .withArgument("x-message-ttl", 10*1000) //10秒
+                .withArgument("x-message-ttl", 20*1000) //20秒
+                .withArgument("x-dead-letter-exchange",
+                        RabbitMQSMSConfig_Dead.SMS_EXCHANGE_DEAD)
+                .withArgument("x-dead-letter-routing-key",
+                        RabbitMQSMSConfig_Dead.ROUTING_KEY_SMS_DEAD)
+                .withArgument("x-max-length", 6)
                 .build(); //方法2
     }
 

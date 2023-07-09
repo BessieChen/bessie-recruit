@@ -113,37 +113,37 @@ public class PassportController extends BaseInfoProperties {
             }
         });
 
-//        for(int i = 0 ; i < 10; ++i){
-//            // 把短信内容和手机号构建为一个bean并且转换为json作为消息发送给mq
-//            rabbitTemplate.convertAndSend(
-//                    RabbitMQSMSConfig.SMS_EXCHANGE,                             //正确的交换机
-////                RabbitMQSMSConfig.SMS_EXCHANGE + "123",                   //错误的交换机
-//                    RabbitMQSMSConfig.ROUTING_KEY_SMS_SEND_LOGIN,               //正确的路由
-////                "abc.123" + RabbitMQSMSConfig.ROUTING_KEY_SMS_SEND_LOGIN, //错误的路由
-//                    GsonUtils.object2String(contentQO),
-//                    new CorrelationData(UUID.randomUUID().toString()));
-//        }
-
-        // 消息属性处理的类对象（对当前需要的超时ttl进行参数属性的设置）
-        MessagePostProcessor processor = new MessagePostProcessor() {
-            @Override
-            public Message postProcessMessage(Message message) throws AmqpException {
-                message.getMessageProperties()
-                        .setExpiration(String.valueOf(10*1000));
-                return message;
-            }
-        };
         for(int i = 0 ; i < 10; ++i){
-            rabbitTemplate.convertAndSend(RabbitMQSMSConfig.SMS_EXCHANGE,
-                    RabbitMQSMSConfig.ROUTING_KEY_SMS_SEND_LOGIN,
+            // 把短信内容和手机号构建为一个bean并且转换为json作为消息发送给mq
+            rabbitTemplate.convertAndSend(
+                    RabbitMQSMSConfig.SMS_EXCHANGE,                             //正确的交换机
+//                RabbitMQSMSConfig.SMS_EXCHANGE + "123",                   //错误的交换机
+                    RabbitMQSMSConfig.ROUTING_KEY_SMS_SEND_LOGIN,               //正确的路由
+//                "abc.123" + RabbitMQSMSConfig.ROUTING_KEY_SMS_SEND_LOGIN, //错误的路由
                     GsonUtils.object2String(contentQO),
-                    message -> {
-                        message.getMessageProperties()
-                                .setExpiration(String.valueOf(30*1000));
-                        return message;
-                    },
                     new CorrelationData(UUID.randomUUID().toString()));
         }
+
+        // 消息属性处理的类对象（对当前需要的超时ttl进行参数属性的设置）
+//        MessagePostProcessor processor = new MessagePostProcessor() {
+//            @Override
+//            public Message postProcessMessage(Message message) throws AmqpException {
+//                message.getMessageProperties()
+//                        .setExpiration(String.valueOf(10*1000));
+//                return message;
+//            }
+//        };
+//        for(int i = 0 ; i < 10; ++i){
+//            rabbitTemplate.convertAndSend(RabbitMQSMSConfig.SMS_EXCHANGE,
+//                    RabbitMQSMSConfig.ROUTING_KEY_SMS_SEND_LOGIN,
+//                    GsonUtils.object2String(contentQO),
+//                    message -> {
+//                        message.getMessageProperties()
+//                                .setExpiration(String.valueOf(30*1000));
+//                        return message;
+//                    },
+//                    new CorrelationData(UUID.randomUUID().toString()));
+//        }
 
 
 
