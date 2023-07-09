@@ -199,18 +199,16 @@ public class RabbitMQSMSConsumer {
 
     }
 
-//    @RabbitListener(queues = {RabbitMQSMSConfig.SMS_QUEUE})
+    @RabbitListener(queues = {RabbitMQSMSConfig.SMS_QUEUE})
     public void watchQueue6(Message message, Channel channel) throws Exception {
 
-        String routingKey = message.getMessageProperties().getReceivedRoutingKey();
-        log.warn("routingKey = " + routingKey);
+//        String routingKey = message.getMessageProperties().getReceivedRoutingKey();
+//        log.warn("routingKey = " + routingKey);
+//
+//        String msg = new String(message.getBody());
+//        log.warn("msg = " + msg);
 
-        String msg = new String(message.getBody());
-        log.warn("msg = " + msg);
-
-        channel.basicAck(message.getMessageProperties().getDeliveryTag(),
-                true);
-//        channel.basicNack(message.getMessageProperties().getDeliveryTag(),
-//                false, false);
+        channel.basicNack(message.getMessageProperties().getDeliveryTag(),
+                false, false);
     }
 }
