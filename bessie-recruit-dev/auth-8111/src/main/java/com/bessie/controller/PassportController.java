@@ -110,14 +110,16 @@ public class PassportController extends BaseInfoProperties {
             }
         });
 
-        // 把短信内容和手机号构建为一个bean并且转换为json作为消息发送给mq
-        rabbitTemplate.convertAndSend(
-                RabbitMQSMSConfig.SMS_EXCHANGE,                             //正确的交换机
+        for(int i = 0 ; i < 10; ++i){
+            // 把短信内容和手机号构建为一个bean并且转换为json作为消息发送给mq
+            rabbitTemplate.convertAndSend(
+                    RabbitMQSMSConfig.SMS_EXCHANGE,                             //正确的交换机
 //                RabbitMQSMSConfig.SMS_EXCHANGE + "123",                   //错误的交换机
-                RabbitMQSMSConfig.ROUTING_KEY_SMS_SEND_LOGIN,               //正确的路由
+                    RabbitMQSMSConfig.ROUTING_KEY_SMS_SEND_LOGIN,               //正确的路由
 //                "abc.123" + RabbitMQSMSConfig.ROUTING_KEY_SMS_SEND_LOGIN, //错误的路由
-                GsonUtils.object2String(contentQO),
-                new CorrelationData(UUID.randomUUID().toString()));
+                    GsonUtils.object2String(contentQO),
+                    new CorrelationData(UUID.randomUUID().toString()));
+        }
 
         redis.set(MOBILE_SMSCODE + ":" + mobile, code, 30 * 60);
 

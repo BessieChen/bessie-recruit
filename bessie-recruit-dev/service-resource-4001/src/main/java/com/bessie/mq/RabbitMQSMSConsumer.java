@@ -33,13 +33,13 @@ public class RabbitMQSMSConsumer {
     //@RabbitListener(queues = {RabbitMQSMSConfig.SMS_QUEUE}) //绑定的就是 sms_queue 这个队列
     public void watchQueue(String payload, Message message) throws Exception {
 
-        log.info("payload = " + payload);
+        log.warn("payload = " + payload);
 
         String routingKey = message.getMessageProperties().getReceivedRoutingKey();
-        log.info("routingKey = " + routingKey);
+        log.warn("routingKey = " + routingKey);
 
         String msg = payload;
-        log.info("msg = " + msg);
+        log.warn("msg = " + msg);
 
         if (routingKey.equalsIgnoreCase(RabbitMQSMSConfig.ROUTING_KEY_SMS_SEND_LOGIN)) {
             // 此处为短信发送的消息消费处理
@@ -58,10 +58,10 @@ public class RabbitMQSMSConsumer {
     public void watchQueue(Message message, Channel channel) throws Exception {
 
         String routingKey = message.getMessageProperties().getReceivedRoutingKey();
-        log.info("routingKey = " + routingKey);
+        log.warn("routingKey = " + routingKey);
 
         String msg = new String(message.getBody());
-        log.info("msg = " + msg);
+        log.warn("msg = " + msg);
 
     }
 
@@ -75,10 +75,10 @@ public class RabbitMQSMSConsumer {
     public void watchQueue2(Message message, Channel channel) throws Exception {
 
         String routingKey = message.getMessageProperties().getReceivedRoutingKey();
-        log.info("routingKey = " + routingKey);
+        log.warn("routingKey = " + routingKey);
 
         String msg = new String(message.getBody());
-        log.info("msg = " + msg);
+        log.warn("msg = " + msg);
 
         /**
          * deliveryTag: 消息投递的标签
@@ -100,12 +100,12 @@ public class RabbitMQSMSConsumer {
 
         try {
             String routingKey = message.getMessageProperties().getReceivedRoutingKey();
-            log.info("routingKey = " + routingKey);
+            log.warn("routingKey = " + routingKey);
 
              int a = 1/0;
 
             String msg = new String(message.getBody());
-            log.info("msg = " + msg);
+            log.warn("msg = " + msg);
 
             /**
              * deliveryTag: 消息投递的标签
@@ -132,17 +132,53 @@ public class RabbitMQSMSConsumer {
      * @param channel
      * @throws Exception
      */
-    @RabbitListener(queues = {RabbitMQSMSConfig.SMS_QUEUE})
+    //@RabbitListener(queues = {RabbitMQSMSConfig.SMS_QUEUE})
     public void watchQueue4(Message message, Channel channel) throws Exception {
 
         try {
             String routingKey = message.getMessageProperties().getReceivedRoutingKey();
-            log.info("routingKey = " + routingKey);
+            log.warn("routingKey = " + routingKey);
 
-            int a = 1/0;
+            int a = 1 / 0;
 
             String msg = new String(message.getBody());
-            log.info("msg = " + msg);
+            log.warn("msg = " + msg);
+
+            /**
+             * deliveryTag: 消息投递的标签
+             * multiple: 批量确认所有消费者获得的消息
+             */
+            channel.basicAck(message.getMessageProperties().getDeliveryTag(),
+                    true);
+        } catch (Exception e) {
+            e.printStackTrace();
+            /**
+             * requeue: true：重回队列 false：丢弃消息
+             */
+            channel.basicNack(message.getMessageProperties().getDeliveryTag(),
+                    true,
+                    false);
+//            channel.basicReject();
+        }
+
+    }
+
+
+    /**
+     *
+     * @param message
+     * @param channel
+     * @throws Exception
+     */
+    @RabbitListener(queues = {RabbitMQSMSConfig.SMS_QUEUE})
+    public void watchQueue5(Message message, Channel channel) throws Exception {
+
+        try {
+            String routingKey = message.getMessageProperties().getReceivedRoutingKey();
+            log.warn("routingKey = " + routingKey);
+
+            String msg = new String(message.getBody());
+            log.warn("msg = " + msg);
 
             /**
              * deliveryTag: 消息投递的标签
