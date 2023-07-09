@@ -38,7 +38,9 @@ public class RabbitMQSMSConfig {
     @Bean(SMS_QUEUE)
     public Queue queue() {
         //return new Queue(SMS_QUEUE);                  //方法1
-        return QueueBuilder.durable(SMS_QUEUE).build(); //方法2
+        return QueueBuilder.durable(SMS_QUEUE)
+                .withArgument("x-message-ttl", 10*1000) //10秒
+                .build(); //方法2
     }
 
     // 创建绑定关系

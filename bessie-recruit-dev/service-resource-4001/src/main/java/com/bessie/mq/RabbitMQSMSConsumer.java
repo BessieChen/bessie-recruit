@@ -170,7 +170,7 @@ public class RabbitMQSMSConsumer {
      * @param channel
      * @throws Exception
      */
-    @RabbitListener(queues = {RabbitMQSMSConfig.SMS_QUEUE})
+    //@RabbitListener(queues = {RabbitMQSMSConfig.SMS_QUEUE})
     public void watchQueue5(Message message, Channel channel) throws Exception {
 
         try {
