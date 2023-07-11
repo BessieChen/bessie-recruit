@@ -5,6 +5,9 @@ spring:
     database: 0
     password: "092121"
   cloud:
+    loadbalancer:
+      nacos:
+        enabled: true   # 开启基于nacos规则的负载均衡
     nacos:
       discovery:
         server-addr: 192.168.31.219:8848

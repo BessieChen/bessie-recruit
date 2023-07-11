@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7138c5b-7254-4346-9c00-8028b308a9ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-api/src/main/java/com/bessie/api/feign/WorkMicroServiceFeign.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/auth-8111/src/main/java/com/bessie/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/auth-8111/src/main/java/com/bessie/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/auth-8111/src/main/java/com/bessie/service/impl/UsersServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/auth-8111/src/main/java/com/bessie/service/impl/UsersServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/auth-8111/target/classes/com/bessie/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/auth-8111/target/classes/com/bessie/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/auth-8111/target/classes/com/bessie/controller/PassportController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/auth-8111/target/classes/com/bessie/controller/PassportController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/auth-8111/target/classes/com/bessie/service/impl/UsersServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/auth-8111/target/classes/com/bessie/service/impl/UsersServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/gateway-8000/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/gateway-8000/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/gateway-8000/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/gateway-8000/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/gateway-8000/target/classes/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/gateway-8000/target/classes/application-dev.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/recruit-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/service-company-6001/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/service-company-6001/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/service-user-7001/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/service-work-3001/src/main/java/com/bessie/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/service-work-3001/src/main/java/com/bessie/controller/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bessie-recruit-dev/service-work-3001/target/classes/com/bessie/controller/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../bessie-recruit-dev/service-work-3001/target/classes/com/bessie/controller/HelloController.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />

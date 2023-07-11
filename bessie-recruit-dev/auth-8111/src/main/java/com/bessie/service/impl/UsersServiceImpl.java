@@ -89,7 +89,7 @@ public class UsersServiceImpl extends ServiceImpl<UsersMapper, Users> implements
         usersMapper.insert(user);
 
         // 发起远程调用，初始化用户简历，新增一条空记录
-        workMicroServiceFeign.init(user.getId());
+        GraceJsonResult graceJsonResult = workMicroServiceFeign.init(user.getId());
 
         return user;
     }

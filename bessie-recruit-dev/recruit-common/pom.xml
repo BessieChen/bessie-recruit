@@ -58,6 +58,7 @@
             <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
 
+        <!-- Ribbon 弃用 -->
         <!-- 客户端负载均衡 loadbalancer-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
