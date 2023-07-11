@@ -199,7 +199,7 @@ public class RabbitMQSMSConsumer {
 
     }
 
-    @RabbitListener(queues = {RabbitMQSMSConfig.SMS_QUEUE})
+    //@RabbitListener(queues = {RabbitMQSMSConfig.SMS_QUEUE})
     public void watchQueue6(Message message, Channel channel) throws Exception {
 
 //        String routingKey = message.getMessageProperties().getReceivedRoutingKey();

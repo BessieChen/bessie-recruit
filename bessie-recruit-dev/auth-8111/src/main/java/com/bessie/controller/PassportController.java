@@ -83,46 +83,46 @@ public class PassportController extends BaseInfoProperties {
         contentQO.setContent(code);
 
         // 定义confirm回调
-        rabbitTemplate.setConfirmCallback(new RabbitTemplate.ConfirmCallback() {
-            /**
-             * 回调函数
-             * @param correlationData 相关性数据
-             * @param ack 交换机是否成功接收到消息，true：成功
-             * @param cause 失败的原因
-             */
-            @Override
-            public void confirm(CorrelationData correlationData,
-                                boolean ack,
-                                String cause) {
-                log.info("进入confirm");
-                log.info("correlationData：{}", correlationData.getId());
-                if (ack) {
-                    log.info("交换机成功接收到消息~~ {}", cause);
-                } else {
-                    log.info("交换机接收消息失败~~失败原因： {}", cause);
-                }
-            }
-        });
-
-        // 定义return回调
-        rabbitTemplate.setReturnsCallback(new RabbitTemplate.ReturnsCallback() {
-            @Override
-            public void returnedMessage(ReturnedMessage returned) {
-                log.info("进入return");
-                log.info(returned.toString());
-            }
-        });
-
-        for(int i = 0 ; i < 10; ++i){
-            // 把短信内容和手机号构建为一个bean并且转换为json作为消息发送给mq
-            rabbitTemplate.convertAndSend(
-                    RabbitMQSMSConfig.SMS_EXCHANGE,                             //正确的交换机
-//                RabbitMQSMSConfig.SMS_EXCHANGE + "123",                   //错误的交换机
-                    RabbitMQSMSConfig.ROUTING_KEY_SMS_SEND_LOGIN,               //正确的路由
-//                "abc.123" + RabbitMQSMSConfig.ROUTING_KEY_SMS_SEND_LOGIN, //错误的路由
-                    GsonUtils.object2String(contentQO),
-                    new CorrelationData(UUID.randomUUID().toString()));
-        }
+//        rabbitTemplate.setConfirmCallback(new RabbitTemplate.ConfirmCallback() {
+//            /**
+//             * 回调函数
+//             * @param correlationData 相关性数据
+//             * @param ack 交换机是否成功接收到消息，true：成功
+//             * @param cause 失败的原因
+//             */
+//            @Override
+//            public void confirm(CorrelationData correlationData,
+//                                boolean ack,
+//                                String cause) {
+//                log.info("进入confirm");
+//                log.info("correlationData：{}", correlationData.getId());
+//                if (ack) {
+//                    log.info("交换机成功接收到消息~~ {}", cause);
+//                } else {
+//                    log.info("交换机接收消息失败~~失败原因： {}", cause);
+//                }
+//            }
+//        });
+//
+//        // 定义return回调
+//        rabbitTemplate.setReturnsCallback(new RabbitTemplate.ReturnsCallback() {
+//            @Override
+//            public void returnedMessage(ReturnedMessage returned) {
+//                log.info("进入return");
+//                log.info(returned.toString());
+//            }
+//        });
+//
+//        for(int i = 0 ; i < 10; ++i){
+//            // 把短信内容和手机号构建为一个bean并且转换为json作为消息发送给mq
+//            rabbitTemplate.convertAndSend(
+//                    RabbitMQSMSConfig.SMS_EXCHANGE,                             //正确的交换机
+////                RabbitMQSMSConfig.SMS_EXCHANGE + "123",                   //错误的交换机
+//                    RabbitMQSMSConfig.ROUTING_KEY_SMS_SEND_LOGIN,               //正确的路由
+////                "abc.123" + RabbitMQSMSConfig.ROUTING_KEY_SMS_SEND_LOGIN, //错误的路由
+//                    GsonUtils.object2String(contentQO),
+//                    new CorrelationData(UUID.randomUUID().toString()));
+//        }
 
         // 消息属性处理的类对象（对当前需要的超时ttl进行参数属性的设置）
 //        MessagePostProcessor processor = new MessagePostProcessor() {
@@ -147,7 +147,7 @@ public class PassportController extends BaseInfoProperties {
 
 
 
-        redis.set(MOBILE_SMSCODE + ":" + mobile, code, 30 * 60);
+        redis.set(MOBILE_SMSCODE + ":" + mobile, code,  60); //60秒
 
         return GraceJsonResult.ok();
     }
@@ -158,7 +158,6 @@ public class PassportController extends BaseInfoProperties {
 
         String mobile = registLoginBO.getMobile();
         String code = registLoginBO.getSmsCode();
-
 
         // 1. 从redis中获得验证码进行校验是否匹配
         String redisCode = redis.get(MOBILE_SMSCODE + ":" + mobile);

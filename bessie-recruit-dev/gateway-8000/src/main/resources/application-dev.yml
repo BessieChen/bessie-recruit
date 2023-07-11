@@ -31,6 +31,10 @@ spring:
           uri: lb://resource-service
           predicates:
             - Path=/r/**
+        - id: workRoute
+          uri: lb://work-service
+          predicates:
+            - Path=/w/**,/resume/**
 #      globalcors:           # 配置全局跨域
 #        cors-configurations:
 #          '[/**]':          # 映射路径
