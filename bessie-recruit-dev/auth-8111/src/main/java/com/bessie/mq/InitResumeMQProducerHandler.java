@@ -74,7 +74,7 @@ public class InitResumeMQProducerHandler {
             rabbitTemplate.convertAndSend(
                     record.getTargetExchange(),
                     record.getRoutingKey(),
-                    record.getMsgContent());
+                    record.getMsgContent() + "," + record.getId());
         }
     }
 

@@ -25,8 +25,8 @@ public class InitResumeMQConsumer {
      * @param payload
      * @param message
      */
-    @RabbitListener(queues = {InitResumeMQConfig.INIT_RESUME_QUEUE})
-    public void watchQueue(String payload, Message message) throws Exception {
+    //@RabbitListener(queues = {InitResumeMQConfig.INIT_RESUME_QUEUE})
+    public void watchQueue_pre(String payload, Message message) throws Exception {
 
         String routingKey = message.getMessageProperties().getReceivedRoutingKey();
         log.info("routingKey = " + routingKey);
@@ -36,6 +36,37 @@ public class InitResumeMQConsumer {
 
         if (routingKey.equalsIgnoreCase(InitResumeMQConfig.ROUTING_KEY_INIT_RESUME)) {
             resumeService.initResume(userId);
+        }
+    }
+
+    /**
+     * 监听队列，并且处理消息
+     * @param message
+     * @param channel
+     * @throws Exception
+     */
+    @RabbitListener(queues = {InitResumeMQConfig.INIT_RESUME_QUEUE})
+    public void watchQueue(Message message, Channel channel) throws Exception {
+
+        String routingKey = message.getMessageProperties().getReceivedRoutingKey();
+        String msg = new String(message.getBody());
+
+        String userId = msg.split(",")[0];
+        String msgId = msg.split(",")[1];
+
+        try {
+            if (routingKey.equalsIgnoreCase(InitResumeMQConfig.ROUTING_KEY_INIT_RESUME)) {
+                resumeService.initResume(userId, msgId);
+
+                // 运行成功，ack确认
+                channel.basicAck(message.getMessageProperties().getDeliveryTag(), true);
+                log.info("手动ack确认成功，消息id为{}", msgId);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            // 运行失败，则重回队列
+            channel.basicNack(message.getMessageProperties().getDeliveryTag(), true, true);
+            log.info("手动ack确认失败，消息id为{}", msgId);
         }
     }
 
