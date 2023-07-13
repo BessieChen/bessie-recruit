@@ -30,6 +30,13 @@ import java.util.Map;
 @Slf4j
 public class GraceExceptionHandler {
 
+    @ExceptionHandler(ArithmeticException.class)
+    @ResponseBody
+    public GraceJsonResult returnArithmeticException(ArithmeticException e) {
+        e.printStackTrace();
+        return GraceJsonResult.errorMsg(e.getMessage());
+    }
+
     @ExceptionHandler(MyCustomException.class)
     @ResponseBody
     public GraceJsonResult returnMyCustomException(MyCustomException e) {
