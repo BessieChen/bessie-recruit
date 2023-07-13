@@ -3,3 +3,5 @@
 *.yml
 *.properties
 mybatis-plus-generator/.idea/workspace.xml
+*.jar
+*.class
