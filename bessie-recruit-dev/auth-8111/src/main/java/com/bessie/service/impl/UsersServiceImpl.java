@@ -6,19 +6,15 @@ import com.bessie.api.feign.WorkMicroServiceFeign;
 import com.bessie.enums.Sex;
 import com.bessie.enums.ShowWhichName;
 import com.bessie.enums.UserRole;
-import com.bessie.exceptions.GraceException;
 import com.bessie.grace.result.GraceJsonResult;
-import com.bessie.grace.result.ResponseStatusEnum;
 import com.bessie.mapper.UsersMapper;
 import com.bessie.pojo.Users;
 import com.bessie.service.UsersService;
 import com.bessie.utils.DesensitizationUtil;
 import com.bessie.utils.LocalDateUtils;
-import org.apache.commons.lang3.StringUtils;
+import io.seata.spring.annotation.GlobalTransactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.TransactionException;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -51,7 +47,8 @@ public class UsersServiceImpl extends ServiceImpl<UsersMapper, Users> implements
         return user;
     }
 
-    @Transactional
+//    @Transactional
+    @GlobalTransactional
     @Override
     public Users createUser(String mobile) {
 
@@ -90,6 +87,8 @@ public class UsersServiceImpl extends ServiceImpl<UsersMapper, Users> implements
 
         // 发起远程调用，初始化用户简历，新增一条空记录
         GraceJsonResult graceJsonResult = workMicroServiceFeign.init(user.getId());
+
+        int a = 1 / 0;
 
         return user;
     }
