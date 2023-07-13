@@ -5,3 +5,4 @@ com/bessie/api/task/SMSTask.class
 com/bessie/api/mq/RabbitMQSMSConfig.class
 com/bessie/api/intercept/SMSInterceptor.class
 com/bessie/api/ServiceLogAspect.class
+com/bessie/api/SeataTransactionAspect.class
