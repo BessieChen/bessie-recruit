@@ -26,7 +26,7 @@ public class ResumeServiceImpl implements ResumeService {
         resume.setCreateTime(LocalDateTime.now());
         resume.setUpdatedTime(LocalDateTime.now());
 
-        int a = 1 / 0;
+        //int a = 1 / 0;
 
         resumeMapper.insert(resume);
     }

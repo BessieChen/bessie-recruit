@@ -3,6 +3,7 @@ package com.bessie.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.bessie.api.feign.WorkMicroServiceFeign;
+import com.bessie.api.mq.InitResumeMQConfig;
 import com.bessie.enums.Sex;
 import com.bessie.enums.ShowWhichName;
 import com.bessie.enums.UserRole;
@@ -19,8 +20,10 @@ import io.seata.core.exception.TransactionException;
 import io.seata.spring.annotation.GlobalTransactional;
 import io.seata.tm.api.GlobalTransactionContext;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 
 import java.time.LocalDate;
@@ -54,10 +57,30 @@ public class UsersServiceImpl extends ServiceImpl<UsersMapper, Users> implements
         return user;
     }
 
-//    @Transactional
-    @GlobalTransactional
+    @Autowired
+    public RabbitTemplate rabbitTemplate;
+
+    @Transactional
     @Override
-    public Users createUser(String mobile) {
+    public Users createUsersAndInitResumeMQ(String mobile) {
+
+        // 创建用户
+        Users user = createUsers(mobile);
+
+        // 发送消息，初始化简历
+        rabbitTemplate.convertAndSend(
+                InitResumeMQConfig.INIT_RESUME_EXCHANGE,
+                InitResumeMQConfig.ROUTING_KEY_INIT_RESUME,
+                user.getId());
+
+        return user;
+    }
+
+
+    @Transactional
+//    @GlobalTransactional
+    @Override
+    public Users createUsers(String mobile) {
 
         Users user = new Users();
 
@@ -93,21 +116,21 @@ public class UsersServiceImpl extends ServiceImpl<UsersMapper, Users> implements
         usersMapper.insert(user);
 
         // 发起远程调用，初始化用户简历，新增一条空记录
-        GraceJsonResult graceJsonResult = workMicroServiceFeign.init(user.getId());
-        if (graceJsonResult.getStatus() != 200) {
-            // 如果调用状态不是200，则手动回滚全局事务
-            String xid = RootContext.getXID();
-            if (StringUtils.isNotBlank(xid)) {
-
-                try {
-                    GlobalTransactionContext.reload(xid).rollback();
-                } catch (TransactionException e) {
-                    e.printStackTrace();
-                } finally {
-                    GraceException.doException(ResponseStatusEnum.USER_REGISTER_ERROR);
-                }
-            }
-        }
+//        GraceJsonResult graceJsonResult = workMicroServiceFeign.init(user.getId());
+//        if (graceJsonResult.getStatus() != 200) {
+//            // 如果调用状态不是200，则手动回滚全局事务
+//            String xid = RootContext.getXID();
+//            if (StringUtils.isNotBlank(xid)) {
+//
+//                try {
+//                    GlobalTransactionContext.reload(xid).rollback();
+//                } catch (TransactionException e) {
+//                    e.printStackTrace();
+//                } finally {
+//                    GraceException.doException(ResponseStatusEnum.USER_REGISTER_ERROR);
+//                }
+//            }
+//        }
 
         //int a = 1 / 0;
 

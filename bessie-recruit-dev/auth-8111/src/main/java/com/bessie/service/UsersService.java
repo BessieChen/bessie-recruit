@@ -21,6 +21,13 @@ public interface UsersService extends IService<Users> {
     /**
      * 创建用户信息，并且返回用户对象
      */
-    public Users createUser(String mobile);
+    public Users createUsers(String mobile);
+
+    /**
+     * 消息的一致性
+     * @param mobile
+     * @return
+     */
+    public Users createUsersAndInitResumeMQ(String mobile);
 
 }
