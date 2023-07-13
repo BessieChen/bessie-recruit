@@ -11,11 +11,11 @@ import org.springframework.stereotype.Controller;
  * </p>
  *
  * @author bessie
- * @since 2023-07-06
+ * @since 2023-07-13
  */
 @Controller
-@RequestMapping("/stu")
-public class StuController {
+@RequestMapping("/mqLocalMsgRecord")
+public class MqLocalMsgRecordController {
 
 }
 

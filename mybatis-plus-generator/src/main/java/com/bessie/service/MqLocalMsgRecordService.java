@@ -1,7 +1,7 @@
 package com.bessie.service;
 
+import com.bessie.pojo.MqLocalMsgRecord;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.bessie.pojo.Stu;
 
 /**
  * <p>
@@ -9,8 +9,8 @@ import com.bessie.pojo.Stu;
  * </p>
  *
  * @author bessie
- * @since 2023-07-06
+ * @since 2023-07-13
  */
-public interface StuService extends IService<Stu> {
+public interface MqLocalMsgRecordService extends IService<MqLocalMsgRecord> {
 
 }

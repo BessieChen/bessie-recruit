@@ -7,24 +7,16 @@ import com.bessie.api.mq.InitResumeMQConfig;
 import com.bessie.enums.Sex;
 import com.bessie.enums.ShowWhichName;
 import com.bessie.enums.UserRole;
-import com.bessie.exceptions.GraceException;
-import com.bessie.grace.result.GraceJsonResult;
-import com.bessie.grace.result.ResponseStatusEnum;
 import com.bessie.mapper.UsersMapper;
+import com.bessie.mq.InitResumeMQProducerHandler;
 import com.bessie.pojo.Users;
 import com.bessie.service.UsersService;
 import com.bessie.utils.DesensitizationUtil;
 import com.bessie.utils.LocalDateUtils;
-import io.seata.core.context.RootContext;
-import io.seata.core.exception.TransactionException;
-import io.seata.spring.annotation.GlobalTransactional;
-import io.seata.tm.api.GlobalTransactionContext;
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -60,6 +52,9 @@ public class UsersServiceImpl extends ServiceImpl<UsersMapper, Users> implements
     @Autowired
     public RabbitTemplate rabbitTemplate;
 
+    @Autowired
+    public InitResumeMQProducerHandler producerHandler;
+
     @Transactional
     @Override
     public Users createUsersAndInitResumeMQ(String mobile) {
@@ -67,11 +62,18 @@ public class UsersServiceImpl extends ServiceImpl<UsersMapper, Users> implements
         // 创建用户
         Users user = createUsers(mobile);
 
-        // 发送消息，初始化简历
-        rabbitTemplate.convertAndSend(
+        // 通过消息助手类进行本地消息的存储
+        producerHandler.saveLocalMsg(
                 InitResumeMQConfig.INIT_RESUME_EXCHANGE,
                 InitResumeMQConfig.ROUTING_KEY_INIT_RESUME,
                 user.getId());
+
+
+        // 发送消息，初始化简历
+//        rabbitTemplate.convertAndSend(
+//                InitResumeMQConfig.INIT_RESUME_EXCHANGE,
+//                InitResumeMQConfig.ROUTING_KEY_INIT_RESUME,
+//                user.getId());
 
         return user;
     }

@@ -7,4 +7,5 @@
 /Users/bessie/Desktop/JOB/whole_systems/6_program/3_java/java-senior/bessie-recruit/bessie-recruit-dev/recruit-api/src/main/java/com/bessie/api/SeataTransactionAspect.java
 /Users/bessie/Desktop/JOB/whole_systems/6_program/3_java/java-senior/bessie-recruit/bessie-recruit-dev/recruit-api/src/main/java/com/bessie/api/retry/RetryComponent.java
 /Users/bessie/Desktop/JOB/whole_systems/6_program/3_java/java-senior/bessie-recruit/bessie-recruit-dev/recruit-api/src/main/java/com/bessie/api/intercept/JWTCurrentUserInterceptor.java
+/Users/bessie/Desktop/JOB/whole_systems/6_program/3_java/java-senior/bessie-recruit/bessie-recruit-dev/recruit-api/src/main/java/com/bessie/api/mq/InitResumeMQConfig.java
 /Users/bessie/Desktop/JOB/whole_systems/6_program/3_java/java-senior/bessie-recruit/bessie-recruit-dev/recruit-api/src/main/java/com/bessie/api/task/SMSTask.java

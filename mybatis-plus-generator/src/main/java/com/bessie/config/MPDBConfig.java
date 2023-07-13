@@ -57,7 +57,7 @@ public class MPDBConfig {
 
         //下面是需要为哪些{数据表}生成代码
 //        strategy.setInclude("users");
-        strategy.setInclude("admin");
+//        strategy.setInclude("admin");
 //        strategy.setInclude("company");
 //        strategy.setInclude("industry");
 //        strategy.setInclude("data_dictionary");
@@ -75,6 +75,7 @@ public class MPDBConfig {
 //        strategy.setInclude("chat_message");
 //        strategy.setInclude("interview");
 //        strategy.setInclude("orders");
+        strategy.setInclude("mq_local_msg_record");
         autoGenerator.setStrategy(strategy);
 
         // 包名策略配置

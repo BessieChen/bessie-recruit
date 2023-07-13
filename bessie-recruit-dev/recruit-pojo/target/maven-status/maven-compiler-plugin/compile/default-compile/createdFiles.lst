@@ -11,6 +11,7 @@ com/bessie/pojo/ResumeExpect.class
 com/bessie/pojo/Resume.class
 com/bessie/pojo/Users.class
 com/bessie/pojo/JobType.class
+com/bessie/pojo/MqLocalMsgRecord.class
 com/bessie/pojo/bo/AdminBO.class
 com/bessie/pojo/Job.class
 com/bessie/pojo/Interview.class

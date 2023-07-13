@@ -1,6 +1,7 @@
 package com.bessie.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.bessie.pojo.MqLocalMsgRecord;
 
 /**
  * <p>
@@ -8,8 +9,8 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * </p>
  *
  * @author bessie
- * @since 2023-07-06
+ * @since 2023-07-13
  */
-public interface StuMapper extends BaseMapper<Stu> {
+public interface MqLocalMsgRecordMapper extends BaseMapper<MqLocalMsgRecord> {
 
 }
