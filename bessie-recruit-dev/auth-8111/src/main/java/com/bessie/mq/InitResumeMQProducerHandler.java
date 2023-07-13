@@ -2,6 +2,7 @@ package com.bessie.mq;
 
 import com.bessie.pojo.MqLocalMsgRecord;
 import com.bessie.service.MqLocalMsgRecordService;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
@@ -25,6 +26,9 @@ public class InitResumeMQProducerHandler {
 
     @Autowired
     private MqLocalMsgRecordService recordService;
+
+    @Autowired
+    public RabbitTemplate rabbitTemplate;
 
     /**
      * 保存消息到本地数据库
@@ -51,6 +55,27 @@ public class InitResumeMQProducerHandler {
         // 每次消息存储在本地表中之后，都需要存储在当前线程中，事务提交以后可以对其进行检查
         msgIds.add(record.getId());
         msgIdsThreadLocal.set(msgIds);
+    }
+
+    /**
+     * 发送本地所有的未处理消息给MQ
+     */
+    public void sendAllLocalMsg() {
+        List<String> msgIds = msgIdsThreadLocal.get();
+        if (CollectionUtils.isEmpty(msgIds)) {
+            // 如果为空，那么则可能并不是当前业务所需要进行的消息发送，所以事务提交之后就可以直接完结了
+            return;
+        }
+
+        // 根据msgIds获得当前数据库本地消息记录
+        List<MqLocalMsgRecord> msgRecords = recordService.getBatchLocalMsgRecordList(msgIds);
+        // 循环发送消息记录
+        for (MqLocalMsgRecord record : msgRecords) {
+            rabbitTemplate.convertAndSend(
+                    record.getTargetExchange(),
+                    record.getRoutingKey(),
+                    record.getMsgContent());
+        }
     }
 
 }

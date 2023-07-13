@@ -4,7 +4,10 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.bessie.mapper.MqLocalMsgRecordMapper;
 import com.bessie.pojo.MqLocalMsgRecord;
 import com.bessie.service.MqLocalMsgRecordService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * <p>
@@ -16,5 +19,13 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class MqLocalMsgRecordServiceImpl extends ServiceImpl<MqLocalMsgRecordMapper, MqLocalMsgRecord> implements MqLocalMsgRecordService {
+
+    @Autowired
+    private MqLocalMsgRecordMapper msgRecordMapper;
+
+    @Override
+    public List<MqLocalMsgRecord> getBatchLocalMsgRecordList(List<String> msgIds) {
+        return msgRecordMapper.selectBatchIds(msgIds);
+    }
 
 }

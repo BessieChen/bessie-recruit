@@ -2,35 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b78f2aa9-8747-4e55-a2a8-4043cac91874" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/mapper/MqLocalMsgRecordMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/mq/InitResumeMQProducerHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/service/MqLocalMsgRecordService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/service/impl/MqLocalMsgRecordServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recruit-pojo/src/main/java/com/bessie/pojo/MqLocalMsgRecord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-work-3001/src/main/java/com/bessie/mapper/MqLocalMsgRecordMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-work-3001/src/main/java/com/bessie/service/MqLocalMsgRecordService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-work-3001/src/main/java/com/bessie/service/impl/MqLocalMsgRecordServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/MyTransactionManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/service/impl/UsersServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/service/impl/UsersServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/mq/InitResumeMQProducerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/mq/InitResumeMQProducerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/service/MqLocalMsgRecordService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/service/MqLocalMsgRecordService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/service/impl/MqLocalMsgRecordServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/service/impl/MqLocalMsgRecordServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-8111/target/auth-8111.jar" beforeDir="false" afterPath="$PROJECT_DIR$/auth-8111/target/auth-8111.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recruit-api/target/recruit-api.jar" beforeDir="false" afterPath="$PROJECT_DIR$/recruit-api/target/recruit-api.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recruit-common/target/classes/com/bessie/exceptions/GraceExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/recruit-common/target/classes/com/bessie/exceptions/GraceExceptionHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recruit-common/target/recruit-common.jar" beforeDir="false" afterPath="$PROJECT_DIR$/recruit-common/target/recruit-common.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-work-3001/target/service-work-3001.jar" beforeDir="false" afterPath="$PROJECT_DIR$/service-work-3001/target/service-work-3001.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mybatis-plus-generator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus-generator/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus-generator/src/main/java/com/bessie/config/MPDBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus-generator/src/main/java/com/bessie/config/MPDBConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus-generator/src/main/java/com/bessie/controller/AdminController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus-generator/src/main/java/com/bessie/controller/StuController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus-generator/src/main/java/com/bessie/mapper/StuMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus-generator/src/main/java/com/bessie/service/StuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus-generator/src/main/java/com/bessie/service/StuService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus-generator/src/main/java/com/bessie/service/impl/StuServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus-generator/target/classes/com/bessie/config/MPDBConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus-generator/target/classes/com/bessie/config/MPDBConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus-generator/target/classes/com/bessie/mapper/AdminMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus-generator/target/classes/com/bessie/mapper/AdminMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus-generator/target/classes/com/bessie/mapper/StuMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus-generator/target/classes/com/bessie/pojo/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus-generator/target/classes/com/bessie/pojo/Admin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus-generator/target/classes/com/bessie/service/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus-generator/target/classes/com/bessie/service/AdminService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus-generator/target/classes/com/bessie/service/impl/AdminServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis-plus-generator/target/classes/com/bessie/service/impl/AdminServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis-plus-generator/target/classes/com/bessie/service/impl/StuServiceImpl.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -60,18 +42,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/service/impl/UsersServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-689">
-              <caret line="59" column="17" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/service-work-3001/src/main/java/com/bessie/mapper/MqLocalMsgRecordMapper.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -105,11 +75,44 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/mq/InitResumeMQProducerHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="172">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/service/MqLocalMsgRecordService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/service/impl/MqLocalMsgRecordServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/MyTransactionManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -138,28 +141,7 @@
         <entry file="file://$PROJECT_DIR$/service-work-3001/src/main/java/com/bessie/service/impl/MqLocalMsgRecordServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
-              <caret line="17" column="139" lean-forward="true" selection-start-line="17" selection-start-column="139" selection-end-line="17" selection-end-column="139" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service-work-3001/src/main/java/com/bessie/service/MqLocalMsgRecordService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/controller/PassportController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="174" column="50" lean-forward="true" selection-start-line="174" selection-start-column="50" selection-end-line="174" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="17" column="139" selection-start-line="17" selection-start-column="139" selection-end-line="17" selection-end-column="139" />
             </state>
           </provider>
         </entry>
@@ -222,7 +204,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/recruit-pojo/src/main/java/com/bessie/pojo/mq/SMSContentQO.java" />
         <option value="$PROJECT_DIR$/recruit-common/src/main/java/com/bessie/utils/GsonUtils.java" />
         <option value="$PROJECT_DIR$/service-resource-4001/pom.xml" />
         <option value="$PROJECT_DIR$/service-resource-4001/src/main/resources/application-prod.yml" />
@@ -266,13 +247,14 @@
         <option value="$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/mapper/MqLocalMsgRecordMapper.java" />
         <option value="$PROJECT_DIR$/service-work-3001/src/main/java/com/bessie/mapper/MqLocalMsgRecordMapper.java" />
         <option value="$PROJECT_DIR$/service-work-3001/src/main/java/com/bessie/service/MqLocalMsgRecordService.java" />
-        <option value="$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/service/MqLocalMsgRecordService.java" />
-        <option value="$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/service/impl/MqLocalMsgRecordServiceImpl.java" />
         <option value="$PROJECT_DIR$/service-work-3001/src/main/java/com/bessie/service/impl/MqLocalMsgRecordServiceImpl.java" />
         <option value="$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/service/impl/UsersServiceImpl.java" />
         <option value="$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/service/UsersService.java" />
         <option value="$PROJECT_DIR$/recruit-pojo/src/main/java/com/bessie/pojo/MqLocalMsgRecord.java" />
+        <option value="$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/service/MqLocalMsgRecordService.java" />
+        <option value="$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/service/impl/MqLocalMsgRecordServiceImpl.java" />
         <option value="$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/mq/InitResumeMQProducerHandler.java" />
+        <option value="$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/MyTransactionManager.java" />
       </list>
     </option>
   </component>
@@ -309,8 +291,8 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="49" />
-    <option name="y" value="25" />
+    <option name="x" value="8" />
+    <option name="y" value="134" />
     <option name="width" value="1597" />
     <option name="height" value="1025" />
   </component>
@@ -364,6 +346,25 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bessie" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bessie-recruit-dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bessie-recruit-dev" type="462c0819:PsiDirectoryNode" />
+              <item name="auth-8111" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bessie" type="462c0819:PsiDirectoryNode" />
+              <item name="MyTransactionManager" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="bessie-recruit-dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bessie-recruit-dev" type="462c0819:PsiDirectoryNode" />
+              <item name="auth-8111" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -383,6 +384,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bessie-recruit-dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bessie-recruit-dev" type="462c0819:PsiDirectoryNode" />
+              <item name="auth-8111" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="MqLocalMsgRecordService" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
               <item name="bessie-recruit-dev" type="b2602c69:ProjectViewProjectNode" />
@@ -525,7 +536,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/recruit-pojo/src/main/java/com/bessie/pojo" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/auth-8111/src/main/resources/mapper" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/auth-8111/src/main/java/com/bessie" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -540,11 +551,11 @@
       <recent name="com.bessie.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/auth-8111/src/main/java/com/bessie" />
       <recent name="$PROJECT_DIR$/auth-8111/src/main/resources/mapper" />
       <recent name="$PROJECT_DIR$/service-work-3001/src/main/resources/mapper" />
       <recent name="$PROJECT_DIR$/service-work-3001/src/main/java/com/bessie/mq" />
       <recent name="$PROJECT_DIR$/recruit-api/src/main/java/com/bessie/api/mq" />
-      <recent name="$PROJECT_DIR$/recruit-api/src/main/java/com/bessie/api" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -803,7 +814,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="49" y="25" width="1597" height="1025" extended-state="0" />
+    <frame x="56" y="27" width="1597" height="1025" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8469101" visible="true" weight="0.30482316" />
       <window_info id="Structure" order="1" sideWeight="0.5010799" side_tool="true" weight="0.24958949" />
@@ -906,17 +918,6 @@
     </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#885#886#0" expanded="true" />
-            <element signature="e#947#948#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gateway-8000/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -1188,12 +1189,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/service/MqLocalMsgRecordService.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/service/impl/MqLocalMsgRecordServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/service/UsersService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
@@ -1224,14 +1219,14 @@
     <entry file="file://$PROJECT_DIR$/service-work-3001/src/main/java/com/bessie/service/MqLocalMsgRecordService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/service-work-3001/src/main/java/com/bessie/service/impl/MqLocalMsgRecordServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="17" column="139" lean-forward="true" selection-start-line="17" selection-start-column="139" selection-end-line="17" selection-end-column="139" />
+          <caret line="17" column="139" selection-start-line="17" selection-start-column="139" selection-end-line="17" selection-end-column="139" />
         </state>
       </provider>
     </entry>
@@ -1275,10 +1270,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/service/impl/MqLocalMsgRecordServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/service/MqLocalMsgRecordService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/mq/InitResumeMQProducerHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="172">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/MyTransactionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
