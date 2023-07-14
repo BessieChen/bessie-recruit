@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="rabbit-producer" />
         <module name="recruit-common" />
+        <module name="service-file-5001" />
         <module name="auth-8111" />
         <module name="recruit-pojo" />
         <module name="recruit-api" />
@@ -31,6 +32,7 @@
       <module name="recruit-common" options="-parameters" />
       <module name="recruit-pojo" options="-parameters" />
       <module name="service-company-6001" options="-parameters" />
+      <module name="service-file-5001" options="-parameters" />
       <module name="service-resource-4001" options="-parameters" />
       <module name="service-user-7001" options="-parameters" />
       <module name="service-work-3001" options="-parameters" />
