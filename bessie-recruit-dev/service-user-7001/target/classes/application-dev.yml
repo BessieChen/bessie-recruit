@@ -24,3 +24,24 @@ spring:
         server-addr: 192.168.31.219:8848
         username: nacos
         password: Chen@0921
+
+
+seata:
+  enabled: true
+  tx-service-group: recruit_tx_group
+  service:
+    vgroup-mapping:
+      recruit_tx_group: SEATA_GROUP
+      #recruit_tx_group2: SEATA_GROUP2...
+    grouplist:
+      SEATA_GROUP: 192.168.31.219:8091
+    config:
+      nacos:
+        server-addr: 192.168.31.219:8848
+        username: nacos
+        password: Chen@0921
+    registry:
+      nacos:
+        server-addr: 192.168.31.219:8848
+        username: nacos
+        password: Chen@0921

@@ -11,6 +11,7 @@
 /Users/bessie/Desktop/JOB/whole_systems/6_program/3_java/java-senior/bessie-recruit/bessie-recruit-dev/recruit-pojo/src/main/java/com/bessie/pojo/ar/AdminAR.java
 /Users/bessie/Desktop/JOB/whole_systems/6_program/3_java/java-senior/bessie-recruit/bessie-recruit-dev/recruit-pojo/src/main/java/com/bessie/pojo/bo/AdminBO.java
 /Users/bessie/Desktop/JOB/whole_systems/6_program/3_java/java-senior/bessie-recruit/bessie-recruit-dev/recruit-pojo/src/main/java/com/bessie/pojo/vo/AdminVO.java
+/Users/bessie/Desktop/JOB/whole_systems/6_program/3_java/java-senior/bessie-recruit/bessie-recruit-dev/recruit-pojo/src/main/java/com/bessie/pojo/bo/ModifyUserBO.java
 /Users/bessie/Desktop/JOB/whole_systems/6_program/3_java/java-senior/bessie-recruit/bessie-recruit-dev/recruit-pojo/src/main/java/com/bessie/pojo/JobType.java
 /Users/bessie/Desktop/JOB/whole_systems/6_program/3_java/java-senior/bessie-recruit/bessie-recruit-dev/recruit-pojo/src/main/java/com/bessie/pojo/bo/ResetPwdBO.java
 /Users/bessie/Desktop/JOB/whole_systems/6_program/3_java/java-senior/bessie-recruit/bessie-recruit-dev/recruit-pojo/src/main/java/com/bessie/pojo/SysParams.java
@@ -21,6 +22,7 @@
 /Users/bessie/Desktop/JOB/whole_systems/6_program/3_java/java-senior/bessie-recruit/bessie-recruit-dev/recruit-pojo/src/main/java/com/bessie/pojo/Industry.java
 /Users/bessie/Desktop/JOB/whole_systems/6_program/3_java/java-senior/bessie-recruit/bessie-recruit-dev/recruit-pojo/src/main/java/com/bessie/pojo/ChatMessage.java
 /Users/bessie/Desktop/JOB/whole_systems/6_program/3_java/java-senior/bessie-recruit/bessie-recruit-dev/recruit-pojo/src/main/java/com/bessie/pojo/Admin.java
+/Users/bessie/Desktop/JOB/whole_systems/6_program/3_java/java-senior/bessie-recruit/bessie-recruit-dev/recruit-pojo/src/main/java/com/bessie/pojo/MqLocalMsgRecord.java
 /Users/bessie/Desktop/JOB/whole_systems/6_program/3_java/java-senior/bessie-recruit/bessie-recruit-dev/recruit-pojo/src/main/java/com/bessie/pojo/Job.java
 /Users/bessie/Desktop/JOB/whole_systems/6_program/3_java/java-senior/bessie-recruit/bessie-recruit-dev/recruit-pojo/src/main/java/com/bessie/pojo/Users.java
 /Users/bessie/Desktop/JOB/whole_systems/6_program/3_java/java-senior/bessie-recruit/bessie-recruit-dev/recruit-pojo/src/main/java/com/bessie/pojo/bo/CreateAdminBO.java
