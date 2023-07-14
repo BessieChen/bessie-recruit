@@ -2,110 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b78f2aa9-8747-4e55-a2a8-4043cac91874" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/service-file-5001/src/main/java/com/bessie/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-file-5001/src/main/java/com/bessie/controller/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-8111/target/auth-8111.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-8111/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-8111/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-8111/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-8111/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-8000/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-8000/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-8000/target/classes/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-8000/target/classes/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-8000/target/gateway-8000.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-8000/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-8000/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-8000/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-8000/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-8000/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-consumer/target/classes/com/bessie/mq/FooConsumer$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-consumer/target/classes/com/bessie/mq/FooConsumer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-consumer/target/classes/com/bessie/mq/PubSubConsumerA$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-consumer/target/classes/com/bessie/mq/PubSubConsumerA.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-consumer/target/classes/com/bessie/mq/PubSubConsumerB$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-consumer/target/classes/com/bessie/mq/PubSubConsumerB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-consumer/target/classes/com/bessie/mq/RoutingOrderConsumerA$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-consumer/target/classes/com/bessie/mq/RoutingOrderConsumerA.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-consumer/target/classes/com/bessie/mq/RoutingPayConsumerB$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-consumer/target/classes/com/bessie/mq/RoutingPayConsumerB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-consumer/target/classes/com/bessie/mq/TopicsOrderConsumerA$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-consumer/target/classes/com/bessie/mq/TopicsOrderConsumerA.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-consumer/target/classes/com/bessie/mq/TopicsPayConsumerB$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-consumer/target/classes/com/bessie/mq/TopicsPayConsumerB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-consumer/target/classes/com/bessie/mq/WorkQueueConsumerA$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-consumer/target/classes/com/bessie/mq/WorkQueueConsumerA.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-consumer/target/classes/com/bessie/mq/WorkQueueConsumerB$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-consumer/target/classes/com/bessie/mq/WorkQueueConsumerB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-consumer/target/classes/com/bessie/mq/WorkQueueConsumerC$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-consumer/target/classes/com/bessie/mq/WorkQueueConsumerC.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-consumer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-consumer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-consumer/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-consumer/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-consumer/target/rabbit-consumer.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-producer/target/classes/com/bessie/mq/FooProducer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-producer/target/classes/com/bessie/mq/PubSubProducer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-producer/target/classes/com/bessie/mq/RoutingProducer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-producer/target/classes/com/bessie/mq/TopicsProducer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-producer/target/classes/com/bessie/mq/WorkQueueProducer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-producer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-producer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-producer/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-producer/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit-producer/target/rabbit-producer.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recruit-api/target/classes/META-INF/recruit-api.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recruit-api/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recruit-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recruit-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recruit-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recruit-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recruit-api/target/recruit-api.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/recruit-common/target/classes/com/bessie/exceptions/GraceExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/recruit-common/target/classes/com/bessie/exceptions/GraceExceptionHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recruit-common/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recruit-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recruit-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recruit-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recruit-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recruit-common/target/recruit-common.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recruit-pojo/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recruit-pojo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recruit-pojo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recruit-pojo/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recruit-pojo/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recruit-pojo/target/recruit-pojo.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-company-6001/src/main/java/com/bessie/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-company-6001/src/main/java/com/bessie/controller/FileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-company-6001/target/classes/com/bessie/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-company-6001/target/classes/com/bessie/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-company-6001/target/classes/com/bessie/controller/HelloController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-company-6001/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-company-6001/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-company-6001/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-company-6001/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-company-6001/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-company-6001/target/service-user-6001.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-resource-4001/target/classes/com/bessie/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-resource-4001/target/classes/com/bessie/controller/HelloController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-resource-4001/target/classes/com/bessie/mq/RabbitMQSMSConsumer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-resource-4001/target/classes/com/bessie/mq/RabbitMQSMSConsumer_Dead.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-resource-4001/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-resource-4001/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-resource-4001/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-resource-4001/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-resource-4001/target/service-resource-4001.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-resource-4001/target/test-classes/com/bessie/test/JasyptTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-user-7001/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-user-7001/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-user-7001/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-user-7001/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-user-7001/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-user-7001/target/service-user-7001.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-work-3001/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-work-3001/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-work-3001/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-work-3001/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-work-3001/target/service-work-3001.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-file-5001/src/main/java/com/bessie/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-file-5001/src/main/java/com/bessie/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-file-5001/src/main/java/com/bessie/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-file-5001/src/main/java/com/bessie/controller/HelloController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -137,93 +36,99 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service-company-6001/pom.xml">
+        <entry file="file://$PROJECT_DIR$/gateway-8000/src/main/java/com/bessie/filter/IPLimitFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="19" selection-start-line="13" selection-start-column="4" selection-end-line="19" selection-end-column="19" />
+            <state relative-caret-position="72">
+              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service-file-5001/pom.xml">
+        <entry file="file://$PROJECT_DIR$/recruit-common/src/main/java/com/bessie/utils/JWTUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+            <state relative-caret-position="106">
+              <caret line="32" column="37" lean-forward="true" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service-file-5001/src/main/resources/application.yml">
+        <entry file="file://$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/controller/SaasPassportController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+            <state relative-caret-position="132">
+              <caret line="168" column="40" selection-start-line="168" selection-start-column="40" selection-end-line="168" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service-file-5001/src/main/resources/application-dev.yml">
+        <entry file="file://$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/controller/AdminController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+            <state relative-caret-position="189">
+              <caret line="55" column="27" lean-forward="true" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service-file-5001/src/main/resources/application-prod.yml">
+        <entry file="file://$PROJECT_DIR$/service-user-7001/src/main/java/com/bessie/controller/UserInfoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/service-file-5001/src/main/java/com/bessie/Application.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="14" column="97" selection-start-line="14" selection-start-column="97" selection-end-line="14" selection-end-column="97" />
+            <state relative-caret-position="297">
+              <caret line="51" column="33" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
               <folding>
-                <element signature="e#536#537#0" expanded="true" />
-                <element signature="e#598#599#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gateway-8000/src/main/java/com/bessie/filter/ExcludeUrlProperties.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/service-file-5001/src/main/java/com/bessie/controller/HelloController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+            <state relative-caret-position="226">
+              <caret line="44" column="20" lean-forward="true" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gateway-8000/src/main/resources/application-dev.yml">
+        <entry file="file://$PROJECT_DIR$/gateway-8000/src/main/java/com/bessie/controller/HelloController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+            <state relative-caret-position="195">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service-company-6001/src/main/java/com/bessie/Application.java">
+        <entry file="file://$PROJECT_DIR$/gateway-8000/src/main/java/com/bessie/CorsConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="13" column="100" lean-forward="true" selection-start-line="13" selection-start-column="100" selection-end-line="13" selection-end-column="100" />
+            <state relative-caret-position="174">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service-company-6001/src/main/java/com/bessie/controller/FileController.java">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/gateway-8000/src/main/java/com/bessie/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -240,11 +145,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>loadbalan</find>
-      <find>${port</find>
-      <find>&quot;w&quot;</find>
-      <find>JSONR</find>
-      <find>username: nacos</find>
       <find>ResumeSer</find>
       <find>alibaba-nacos-</find>
       <find>SON</find>
@@ -270,6 +170,11 @@
       <find>SEATA</find>
       <find>手动开启全局事务</find>
       <find>admininfo</find>
+      <find>SONR</find>
+      <find>generatorJWT</find>
+      <find>dealJWT</find>
+      <find>createJWT</find>
+      <find>createJWTWithPrefix</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -331,10 +236,10 @@
         <option value="$PROJECT_DIR$/service-file-5001/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/service-file-5001/src/main/resources/application-dev.yml" />
         <option value="$PROJECT_DIR$/service-file-5001/src/main/resources/application-prod.yml" />
-        <option value="$PROJECT_DIR$/service-file-5001/src/main/java/com/bessie/controller/HelloController.java" />
         <option value="$PROJECT_DIR$/gateway-8000/src/main/resources/application-dev.yml" />
         <option value="$PROJECT_DIR$/service-company-6001/src/main/java/com/bessie/Application.java" />
         <option value="$PROJECT_DIR$/service-file-5001/src/main/java/com/bessie/Application.java" />
+        <option value="$PROJECT_DIR$/service-file-5001/src/main/java/com/bessie/controller/HelloController.java" />
       </list>
     </option>
   </component>
@@ -371,8 +276,8 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="9" />
-    <option name="y" value="47" />
+    <option name="x" value="132" />
+    <option name="y" value="355" />
     <option name="width" value="1597" />
     <option name="height" value="1025" />
   </component>
@@ -396,60 +301,25 @@
             <path>
               <item name="bessie-recruit-dev" type="b2602c69:ProjectViewProjectNode" />
               <item name="bessie-recruit-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="service-company-6001" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway-8000" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bessie-recruit-dev" type="b2602c69:ProjectViewProjectNode" />
               <item name="bessie-recruit-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="service-company-6001" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway-8000" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bessie-recruit-dev" type="b2602c69:ProjectViewProjectNode" />
               <item name="bessie-recruit-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="service-company-6001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bessie-recruit-dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bessie-recruit-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="service-company-6001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bessie-recruit-dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bessie-recruit-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="service-company-6001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bessie" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bessie-recruit-dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bessie-recruit-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="service-file-5001" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bessie-recruit-dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bessie-recruit-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="service-file-5001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bessie-recruit-dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bessie-recruit-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="service-file-5001" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway-8000" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bessie-recruit-dev" type="b2602c69:ProjectViewProjectNode" />
               <item name="bessie-recruit-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="service-file-5001" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway-8000" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -457,7 +327,7 @@
             <path>
               <item name="bessie-recruit-dev" type="b2602c69:ProjectViewProjectNode" />
               <item name="bessie-recruit-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="service-file-5001" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway-8000" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -466,17 +336,7 @@
             <path>
               <item name="bessie-recruit-dev" type="b2602c69:ProjectViewProjectNode" />
               <item name="bessie-recruit-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="service-file-5001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bessie" type="462c0819:PsiDirectoryNode" />
-              <item name="Application" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="bessie-recruit-dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bessie-recruit-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="service-file-5001" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway-8000" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -485,20 +345,63 @@
             <path>
               <item name="bessie-recruit-dev" type="b2602c69:ProjectViewProjectNode" />
               <item name="bessie-recruit-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="service-file-5001" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway-8000" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="HelloController" type="1a9f42e2:ClassTreeNode" />
+              <item name="filter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bessie-recruit-dev" type="b2602c69:ProjectViewProjectNode" />
               <item name="bessie-recruit-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="service-file-5001" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway-8000" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bessie-recruit-dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bessie-recruit-dev" type="462c0819:PsiDirectoryNode" />
+              <item name="service-file-5001" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bessie-recruit-dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bessie-recruit-dev" type="462c0819:PsiDirectoryNode" />
+              <item name="service-file-5001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bessie-recruit-dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bessie-recruit-dev" type="462c0819:PsiDirectoryNode" />
+              <item name="service-file-5001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bessie-recruit-dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bessie-recruit-dev" type="462c0819:PsiDirectoryNode" />
+              <item name="service-file-5001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bessie-recruit-dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bessie-recruit-dev" type="462c0819:PsiDirectoryNode" />
+              <item name="service-file-5001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bessie" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bessie-recruit-dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bessie-recruit-dev" type="462c0819:PsiDirectoryNode" />
+              <item name="service-file-5001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -806,7 +709,7 @@
     <frame x="9" y="47" width="1597" height="1025" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8469101" visible="true" weight="0.30482316" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8469101" visible="true" weight="0.30482316" />
       <window_info id="Structure" order="1" sideWeight="0.5010799" side_tool="true" weight="0.24958949" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -815,7 +718,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.15308988" side_tool="true" weight="0.29620853" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" x="231" y="411" width="1218" height="227" id="Run" order="2" sideWeight="0.7846386" visible="true" weight="0.40992448" />
+      <window_info active="true" anchor="bottom" x="231" y="411" width="1218" height="227" id="Run" order="2" sideWeight="0.7846386" visible="true" weight="0.40992448" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.36464772" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -828,7 +731,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24927746" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" sideWeight="0.4934555" visible="true" weight="0.36398715" />
+      <window_info anchor="right" id="Maven" order="4" sideWeight="0.4934555" weight="0.36398715" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
@@ -907,102 +810,6 @@
     </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/recruit-common/src/main/java/com/bessie/exceptions/GraceExceptionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-160">
-          <caret line="20" column="3" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.3.22/spring-aop-5.3.22.jar!/org/springframework/aop/aspectj/AbstractAspectJAdvice.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="418" selection-start-line="418" selection-end-line="418" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/5.3.22/spring-tx-5.3.22.jar!/org/springframework/transaction/interceptor/TransactionAspectSupport.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1410">
-          <caret line="143" column="21" selection-start-line="143" selection-start-column="21" selection-end-line="143" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.3.22/spring-aop-5.3.22.jar!/org/springframework/aop/interceptor/ExposeInvocationInterceptor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-resource-4001/src/main/resources/application-dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="40" selection-start-line="40" selection-end-line="43" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recruit-api/src/main/java/com/bessie/api/mq/InitResumeMQConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="36" column="25" lean-forward="true" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-resource-4001/src/main/java/com/bessie/mq/RabbitMQSMSConsumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="141" column="20" selection-start-line="141" selection-start-column="20" selection-end-line="141" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth-8111/src/main/resources/mapper/MqLocalMsgRecordMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/service/UsersService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/controller/PassportController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="174" column="50" lean-forward="true" selection-start-line="174" selection-start-column="50" selection-end-line="174" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-work-3001/src/main/java/com/bessie/mapper/MqLocalMsgRecordMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recruit-pojo/src/main/java/com/bessie/pojo/Orders.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/service-work-3001/src/main/resources/mapper/MqLocalMsgRecordMapper.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1125,13 +932,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/controller/SaasPassportController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="67" column="34" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/service-work-3001/src/main/java/com/bessie/mq/InitResumeMQConsumer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -1180,16 +980,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#1313#1314#0" expanded="true" />
             <element signature="e#1363#1364#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-user-7001/src/main/java/com/bessie/controller/UserInfoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="60" column="1" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1274,12 +1064,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service-file-5001/src/main/java/com/bessie/controller/HelloController.java">
+    <entry file="file://$PROJECT_DIR$/service-company-6001/src/main/java/com/bessie/controller/FileController.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-company-6001/src/main/java/com/bessie/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        <state relative-caret-position="165">
+          <caret line="13" column="100" selection-start-line="13" selection-start-column="100" selection-end-line="13" selection-end-column="100" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-file-5001/src/main/java/com/bessie/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="13" column="4" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+          <folding>
+            <element signature="e#536#537#0" expanded="true" />
+            <element signature="e#598#599#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway-8000/src/main/resources/excludeUrlPath.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway-8000/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/gateway-8000/src/main/resources/application-dev.yml">
       <provider selected="true" editor-type-id="text-editor">
@@ -1288,23 +1102,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service-company-6001/src/main/java/com/bessie/controller/FileController.java">
+    <entry file="file://$PROJECT_DIR$/gateway-8000/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/service-company-6001/src/main/java/com/bessie/Application.java">
+    <entry file="file://$PROJECT_DIR$/gateway-8000/src/main/resources/application-prod.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway-8000/src/main/java/com/bessie/filter/SecurityFilterJWT.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="13" column="100" lean-forward="true" selection-start-line="13" selection-start-column="100" selection-end-line="13" selection-end-column="100" />
+        <state relative-caret-position="-830">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service-file-5001/src/main/java/com/bessie/Application.java">
+    <entry file="file://$PROJECT_DIR$/gateway-8000/src/main/java/com/bessie/controller/HelloController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="14" column="97" selection-start-line="14" selection-start-column="97" selection-end-line="14" selection-end-column="97" />
+        <state relative-caret-position="195">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway-8000/src/main/java/com/bessie/CorsConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway-8000/src/main/java/com/bessie/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway-8000/src/main/java/com/bessie/filter/IPLimitFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recruit-common/src/main/java/com/bessie/utils/JWTUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="32" column="37" lean-forward="true" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/controller/SaasPassportController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="168" column="40" selection-start-line="168" selection-start-column="40" selection-end-line="168" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-8111/src/main/java/com/bessie/controller/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="55" column="27" lean-forward="true" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-user-7001/src/main/java/com/bessie/controller/UserInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="51" column="33" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
           <folding>
-            <element signature="e#536#537#0" expanded="true" />
-            <element signature="e#598#599#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway-8000/src/main/java/com/bessie/filter/ExcludeUrlProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-file-5001/src/main/java/com/bessie/controller/HelloController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="44" column="20" lean-forward="true" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
