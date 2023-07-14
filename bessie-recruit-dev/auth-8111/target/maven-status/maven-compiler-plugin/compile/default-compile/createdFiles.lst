@@ -1,0 +1,16 @@
+com/bessie/service/UsersService.class
+com/bessie/MyTransactionManager.class
+com/bessie/mapper/AdminMapper.class
+com/bessie/controller/SaasPassportController.class
+com/bessie/service/MqLocalMsgRecordService.class
+com/bessie/Application.class
+com/bessie/controller/PassportController.class
+com/bessie/service/impl/UsersServiceImpl.class
+com/bessie/service/impl/MqLocalMsgRecordServiceImpl.class
+com/bessie/controller/AuthController.class
+com/bessie/service/AdminService.class
+com/bessie/service/impl/AdminServiceImpl.class
+com/bessie/mapper/MqLocalMsgRecordMapper.class
+com/bessie/mq/InitResumeMQProducerHandler.class
+com/bessie/mapper/UsersMapper.class
+com/bessie/controller/AdminController.class

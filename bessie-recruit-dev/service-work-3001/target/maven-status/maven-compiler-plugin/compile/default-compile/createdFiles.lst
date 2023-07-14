@@ -1,0 +1,10 @@
+com/bessie/controller/HelloController.class
+com/bessie/mq/InitResumeMQConsumer.class
+com/bessie/service/ResumeService.class
+com/bessie/service/impl/ResumeServiceImpl.class
+com/bessie/service/MqLocalMsgRecordService.class
+com/bessie/Application.class
+com/bessie/service/impl/MqLocalMsgRecordServiceImpl.class
+com/bessie/mapper/MqLocalMsgRecordMapper.class
+com/bessie/mapper/ResumeMapper.class
+com/bessie/controller/ResumeController.class
