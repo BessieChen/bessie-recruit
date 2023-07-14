@@ -41,7 +41,7 @@ spring:
         - id: fileRoute
           uri: lb://file-service
           predicates:
-            - Path=/file/**
+            - Path=/file/**,/static/**
 #      globalcors:           # 配置全局跨域
 #        cors-configurations:
 #          '[/**]':          # 映射路径

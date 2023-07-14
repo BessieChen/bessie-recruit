@@ -8,6 +8,11 @@
   ],
   "properties": [
     {
+      "name": "exclude.file-start",
+      "type": "java.lang.String",
+      "sourceType": "com.bessie.filter.ExcludeUrlProperties"
+    },
+    {
       "name": "exclude.ip-limit-urls",
       "type": "java.util.List<java.lang.String>",
       "sourceType": "com.bessie.filter.ExcludeUrlProperties"

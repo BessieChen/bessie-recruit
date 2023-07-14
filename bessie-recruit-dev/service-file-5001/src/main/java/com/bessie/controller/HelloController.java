@@ -18,7 +18,7 @@ import java.io.File;
 public class HelloController {
 
     //www.bessie-recruit.com
-    public static final String host = "http://192.168.31.219:8000/";
+    public static final String host = "http://192.168.31.208:8000/"; //注意每次重启macos都要修改啊
 
     @GetMapping("hello")
     public Object hello(){
@@ -54,6 +54,9 @@ public class HelloController {
         // 将内存中的文件数据写入到磁盘
         file.transferTo(newFile);
 
-        return GraceJsonResult.ok();
+        // 生成web可以被访问的url地址
+        String userFaceUrl = host + "static/faceFromBessieRecruit/" + newFileName;
+
+        return GraceJsonResult.ok(userFaceUrl);
     }
 }
